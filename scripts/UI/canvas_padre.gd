@@ -1,0 +1,1 @@
+class_name CanvasPadre extends CanvasLayer

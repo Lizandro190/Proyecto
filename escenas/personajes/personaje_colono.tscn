@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://cvhu66c5l0tgm"]
+
+[ext_resource type="Script" uid="uid://d2bxjjodvgt5l" path="res://scripts/personajes/personaje_colono.gd" id="1_u2262"]
+[ext_resource type="Texture2D" uid="uid://cgqoksm7q6grg" path="res://sprites/personajes/nahomi.png" id="2_cik4j"]
+[ext_resource type="Texture2D" uid="uid://bqwgwnuo66hy1" path="res://sprites/iconos/view_hitbox.png" id="2_gcgf5"]
+[ext_resource type="Texture2D" uid="uid://bohbgcenciokc" path="res://sprites/personajes/nohomi_subiendo.png" id="3_gcgf5"]
+[ext_resource type="Script" uid="uid://bfhgj7253qt4f" path="res://scripts/personajes/accion_jugador_edificio.gd" id="4_ti7n8"]
+[ext_resource type="Script" uid="uid://3h2uv736rqkh" path="res://scripts/personajes/accion_jugador_click.gd" id="5_oghae"]
+[ext_resource type="Script" uid="uid://b2ft5cvni2krt" path="res://scripts/personajes/player_work.gd" id="7_4b457"]
+[ext_resource type="Script" uid="uid://dase6pipxeevi" path="res://scripts/personajes/physic.gd" id="7_cik4j"]
+[ext_resource type="Script" uid="uid://by8cqh7ubxuh" path="res://scripts/personajes/player_state.gd" id="8_hxqrd"]
+[ext_resource type="Script" uid="uid://c6mvrcl0bg20x" path="res://scripts/personajes/player_ubication.gd" id="9_gcgf5"]
+[ext_resource type="Script" uid="uid://c0hrfe0j20m22" path="res://scripts/personajes/player_info.gd" id="9_ot356"]
+[ext_resource type="Script" uid="uid://c10jiwmf7evg5" path="res://scripts/personajes/ai_controller.gd" id="11_qc2ho"]
+[ext_resource type="Script" uid="uid://b1aifn684mndm" path="res://scripts/personajes/build_asigned.gd" id="14_ti7n8"]
+[ext_resource type="Script" uid="uid://d38qkoy7oqus" path="res://scripts/personajes/movement_state.gd" id="16_yuher"]
+[ext_resource type="Script" uid="uid://ck8mmmse3ewtg" path="res://scripts/personajes/move_executor.gd" id="19_mpoin"]
+[ext_resource type="Script" uid="uid://da6118gh61thd" path="res://scripts/personajes/usuario_controller.gd" id="19_ot356"]
+[ext_resource type="Script" uid="uid://2oyohpilk0h7" path="res://scripts/personajes/personality/favorite_weather.gd" id="20_b75nq"]
+[ext_resource type="Script" uid="uid://7fnuj06p1h6b" path="res://scripts/personajes/logic_controler.gd" id="20_mpoin"]
+[ext_resource type="Script" uid="uid://b4tb3bpbq3jbb" path="res://scripts/personajes/base_control.gd" id="20_qc2ho"]
+[ext_resource type="Script" uid="uid://cblns2gguh3ep" path="res://scripts/personajes/personality/personality.gd" id="21_qc2ho"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3k8e"]
+atlas = ExtResource("2_cik4j")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe7qn"]
+atlas = ExtResource("2_cik4j")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvkte"]
+atlas = ExtResource("2_cik4j")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2262"]
+atlas = ExtResource("3_gcgf5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cik4j"]
+atlas = ExtResource("3_gcgf5")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvkte"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3k8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oe7qn")
+}],
+"loop": 1,
+"name": &"caminar",
+"speed": 2.25
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvkte")
+}],
+"loop": 1,
+"name": &"parado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2262")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cik4j")
+}],
+"loop": 1,
+"name": &"subiendo",
+"speed": 2.25
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti7n8"]
+atlas = ExtResource("2_gcgf5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oghae"]
+atlas = ExtResource("2_gcgf5")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yuher"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti7n8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oghae")
+}],
+"loop": 1,
+"name": &"hitbox",
+"speed": 1.18
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2262"]
+size = Vector2(8, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8swwi"]
+size = Vector2(2, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3k8e"]
+size = Vector2(8, 14)
+
+[node name="PersonajeColono" type="CharacterBody2D" unique_id=1606147044]
+collision_layer = 0
+script = ExtResource("1_u2262")
+
+[node name="AnimacionPlayer" type="AnimatedSprite2D" parent="." unique_id=419275552]
+sprite_frames = SubResource("SpriteFrames_wvkte")
+animation = &"caminar"
+
+[node name="HitboxAnimPlayer" type="AnimatedSprite2D" parent="." unique_id=662272183]
+visible = false
+sprite_frames = SubResource("SpriteFrames_yuher")
+animation = &"hitbox"
+frame = 1
+frame_progress = 0.20219664
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1075866930]
+
+[node name="PhysicInteraccion" type="CollisionShape2D" parent="." unique_id=1321266251]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_u2262")
+
+[node name="EdificioActual" type="Area2D" parent="." unique_id=327684042]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("4_ti7n8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdificioActual" unique_id=1823744683]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_8swwi")
+
+[node name="ColonoSeleccion" type="Area2D" parent="." unique_id=105828970]
+script = ExtResource("5_oghae")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColonoSeleccion" unique_id=594352917]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_p3k8e")
+
+[node name="Physic" type="Node" parent="." unique_id=473732737]
+script = ExtResource("7_cik4j")
+
+[node name="PlayerWork" type="Node" parent="." unique_id=1445428943]
+script = ExtResource("7_4b457")
+
+[node name="PlayerUbication" type="Node" parent="." unique_id=1254812973]
+script = ExtResource("9_gcgf5")
+
+[node name="PlayerState" type="Node" parent="." unique_id=422335296]
+script = ExtResource("8_hxqrd")
+
+[node name="PlayerInfo" type="Node" parent="." unique_id=562928612]
+script = ExtResource("9_ot356")
+
+[node name="BuildsAsigned" type="Node" parent="." unique_id=1297935187]
+script = ExtResource("14_ti7n8")
+
+[node name="MovementState" type="Node" parent="." unique_id=1701676046]
+script = ExtResource("16_yuher")
+
+[node name="LogicController" type="Node" parent="." unique_id=1230197924]
+script = ExtResource("20_mpoin")
+
+[node name="MovementExecutor" type="Node" parent="." unique_id=685209422]
+script = ExtResource("19_mpoin")
+
+[node name="BaseController" type="Node" parent="." unique_id=1566874691]
+script = ExtResource("20_qc2ho")
+
+[node name="UsuarioController" type="Node" parent="BaseController" unique_id=110466433]
+script = ExtResource("19_ot356")
+
+[node name="AIController" type="Node" parent="BaseController" unique_id=185163887]
+script = ExtResource("11_qc2ho")
+
+[node name="Personality" type="Node" parent="." unique_id=165352278]
+
+[node name="FavoritWeather" type="Node" parent="Personality" unique_id=948226299]
+script = ExtResource("20_b75nq")
+
+[node name="Personality" type="Node" parent="Personality" unique_id=1428987395]
+script = ExtResource("21_qc2ho")
+
+[connection signal="area_entered" from="EdificioActual" to="EdificioActual" method="_on_area_entered"]
+[connection signal="area_exited" from="EdificioActual" to="EdificioActual" method="_on_area_exited"]
+[connection signal="input_event" from="ColonoSeleccion" to="ColonoSeleccion" method="_on_input_event"]

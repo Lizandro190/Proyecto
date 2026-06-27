@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://nic4jgnwwe4e"]
+
+[ext_resource type="PackedScene" uid="uid://dmdt8o1g3y4jw" path="res://escenas/UI/canvas_padre_hbox.tscn" id="1_daikw"]
+[ext_resource type="Script" uid="uid://bkn3ua0ln3u1m" path="res://scripts/world_general_info/production_info_canvas.gd" id="2_0twyb"]
+[ext_resource type="Texture2D" uid="uid://w4wvtl08c373" path="res://sprites/iconos/flecha_horizontal.png" id="2_h3f6x"]
+[ext_resource type="Script" uid="uid://dujtn2k2iej2b" path="res://scripts/UI/information_world/funcionality_boton.gd" id="3_0twyb"]
+[ext_resource type="Theme" uid="uid://pc4bbtxpc0xj" path="res://recursos/ui_principal.tres" id="3_u5pl6"]
+
+[node name="CanvasProducion" unique_id=456217419 instance=ExtResource("1_daikw")]
+script = ExtResource("2_0twyb")
+
+[node name="PanelContainer" parent="." index="0" unique_id=370850112]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -25.0
+offset_right = 13.0
+offset_bottom = -2.0
+grow_vertical = 0
+theme = ExtResource("3_u5pl6")
+
+[node name="MarginContainer" parent="PanelContainer" index="0" unique_id=461381030]
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 1
+
+[node name="Desglose" type="TextureRect" parent="PanelContainer/MarginContainer/HBoxContainer" parent_id_path=PackedInt32Array(1144805577) index="0" unique_id=1467954659]
+layout_mode = 2
+texture = ExtResource("2_h3f6x")
+stretch_mode = 5
+script = ExtResource("3_0twyb")
+
+[node name="MaderaBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer" parent_id_path=PackedInt32Array(1144805577) index="1" unique_id=1663003802]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="MaderaFija" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/MaderaBox" index="0" unique_id=2073622818]
+layout_mode = 2
+text = "Madera"
+vertical_alignment = 1
+
+[node name="Madera" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/MaderaBox" index="1" unique_id=587041338]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="PiedraBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer" parent_id_path=PackedInt32Array(1144805577) index="2" unique_id=1485792469]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="PiedraFija" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/PiedraBox" index="0" unique_id=1567086698]
+layout_mode = 2
+text = "Piedra"
+
+[node name="Piedra" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/PiedraBox" index="1" unique_id=668159035]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ConocimientoBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer" parent_id_path=PackedInt32Array(1144805577) index="3" unique_id=259100965]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="ConocimientoFijo" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/ConocimientoBox" index="0" unique_id=2036965137]
+layout_mode = 2
+text = "Cncm."
+
+[node name="Conocimiento" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/ConocimientoBox" index="1" unique_id=1398793140]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="gui_input" from="PanelContainer/MarginContainer/HBoxContainer/Desglose" to="PanelContainer/MarginContainer/HBoxContainer/Desglose" method="_on_gui_input"]

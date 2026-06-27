@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://4iqot3sy44o8"]
+
+[ext_resource type="Script" uid="uid://bgj1g6x04xbs2" path="res://scripts/metodos_universales.gd" id="1_sl54e"]
+
+[node name="Universal" type="Node2D" unique_id=1577459098]
+
+[node name="UtilidadesUniversales" type="Node" parent="." unique_id=1781978589]
+script = ExtResource("1_sl54e")

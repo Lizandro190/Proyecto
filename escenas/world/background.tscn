@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bl48xjm5vm7ix"]
+
+[ext_resource type="Script" uid="uid://bt0uci6bs4lff" path="res://scripts/background/background.gd" id="1_eqkr7"]
+[ext_resource type="Texture2D" uid="uid://d3jjbjg5wntdl" path="res://sprites/tilemaps/fondo/background_azul_plano.png" id="2_jgano"]
+[ext_resource type="Texture2D" uid="uid://dx2q6sm48nxbd" path="res://sprites/tilemaps/fondo/estrella_animated.png" id="3_b46hm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xehqc"]
+atlas = ExtResource("3_b46hm")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_splo0"]
+atlas = ExtResource("3_b46hm")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eq6nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xehqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_splo0")
+}],
+"loop": true,
+"name": &"parpadeando",
+"speed": 1.0
+}]
+
+[node name="Background" type="Node2D" unique_id=1163633757]
+script = ExtResource("1_eqkr7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=4087048]
+position = Vector2(283.50003, 211.5)
+scale = Vector2(69.5625, 48.3125)
+texture = ExtResource("2_jgano")
+
+[node name="EstrellaUno" type="AnimatedSprite2D" parent="." unique_id=1788508303]
+position = Vector2(42, 283)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806
+
+[node name="EstrellaDos" type="AnimatedSprite2D" parent="." unique_id=869076341]
+position = Vector2(464, 376.00003)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.32285774
+
+[node name="EstrellaTres" type="AnimatedSprite2D" parent="." unique_id=794580778]
+position = Vector2(603, 291.00003)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.0011127724
+
+[node name="EstrellaCuatro" type="AnimatedSprite2D" parent="." unique_id=2135396137]
+position = Vector2(139, 364)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.78688186
+
+[node name="EstrellaCinco" type="AnimatedSprite2D" parent="." unique_id=2076994330]
+position = Vector2(307, 262.00003)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.2935957
+
+[node name="EstrellaUno2" type="AnimatedSprite2D" parent="." unique_id=462625877]
+position = Vector2(157, 165)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806
+
+[node name="EstrellaUno3" type="AnimatedSprite2D" parent="." unique_id=1678076005]
+position = Vector2(495, 127)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806
+
+[node name="EstrellaUno4" type="AnimatedSprite2D" parent="." unique_id=2028178005]
+position = Vector2(82, 74)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806
+
+[node name="EstrellaUno5" type="AnimatedSprite2D" parent="." unique_id=1054321681]
+position = Vector2(346, 72)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806
+
+[node name="EstrellaUno6" type="AnimatedSprite2D" parent="." unique_id=1464698975]
+position = Vector2(454, 240)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_eq6nc")
+animation = &"parpadeando"
+frame_progress = 0.19768806

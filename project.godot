@@ -1,0 +1,60 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[accessibility]
+
+general/updates_per_second=30
+
+[application]
+
+config/name="IntentoDos (4.6)"
+run/main_scene="uid://uf47tt4y2fl5"
+config/features=PackedStringArray("4.7", "Mobile")
+
+[autoload]
+
+SingleInfo="*uid://wdcw526on6fy"
+UtilidadesUniversalesSNG="*uid://bgj1g6x04xbs2"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/size/mode=1
+window/stretch/mode="canvas_items"
+window/stretch/scale=2.0
+
+[input]
+
+ui_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194319,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":13,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":-1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
+]
+}
+
+[layer_names]
+
+2d_physics/layer_1="solid_object"
+2d_physics/layer_2="hitbox_player"
+2d_physics/layer_3="edificio_area"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+2d/default_gravity=440.0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

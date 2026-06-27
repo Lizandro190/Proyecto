@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://4mw2rdaffmlf"]
+
+[ext_resource type="Texture2D" uid="uid://414aovpq2rse" path="res://sprites/tilemaps/spritesJuntos.png" id="1_tu7pt"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmivm"]
+texture = ExtResource("1_tu7pt")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+3:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_4a2nj"]
+sources/0 = SubResource("TileSetAtlasSource_dmivm")
+
+[node name="Foreground" type="Node2D" unique_id=1243195605]
+
+[node name="Foreground" type="TileMapLayer" parent="." unique_id=68419247]
+tile_set = SubResource("TileSet_4a2nj")

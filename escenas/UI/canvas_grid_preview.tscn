@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cv81kamwkvdx"]
+
+[ext_resource type="Texture2D" uid="uid://b38e1rd3j2cct" path="res://sprites/iconos/area_seleccion.png" id="1_3e55p"]
+[ext_resource type="Script" uid="uid://bw0d5sjdia8sg" path="res://scripts/UI/grid_seleccion/canvas_grid_preview.gd" id="1_glfwr"]
+[ext_resource type="Script" uid="uid://cahxmgpjfxpyh" path="res://scripts/UI/grid_seleccion/grid_preview.gd" id="2_glfwr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbrsb"]
+atlas = ExtResource("1_3e55p")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amcyd"]
+atlas = ExtResource("1_3e55p")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qjea7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbrsb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amcyd")
+}],
+"loop": 1,
+"name": &"zoom",
+"speed": 1.5
+}]
+
+[node name="CanvasGridPreview" type="Node" unique_id=1331282445]
+script = ExtResource("1_glfwr")
+
+[node name="VistaPrevia" type="AnimatedSprite2D" parent="." unique_id=669065850]
+sprite_frames = SubResource("SpriteFrames_qjea7")
+animation = &"zoom"
+script = ExtResource("2_glfwr")

@@ -1,0 +1,112 @@
+[gd_scene format=4 uid="uid://uf47tt4y2fl5"]
+
+[ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main.gd" id="1_jwie6"]
+[ext_resource type="Texture2D" uid="uid://414aovpq2rse" path="res://sprites/tilemaps/spritesJuntos.png" id="2_0kxa1"]
+[ext_resource type="PackedScene" uid="uid://bl48xjm5vm7ix" path="res://escenas/world/background.tscn" id="2_a8p2b"]
+[ext_resource type="Script" uid="uid://cl4sqy68eic6j" path="res://scripts/main/canvas_manager.gd" id="4_a5wrc"]
+[ext_resource type="PackedScene" uid="uid://c46i2syjfjohp" path="res://escenas/edificios/producion/edificio_madera.tscn" id="5_lyxkq"]
+[ext_resource type="PackedScene" uid="uid://d4bqvadwjt6tp" path="res://escenas/UI/canvas_time_info.tscn" id="7_7an46"]
+[ext_resource type="PackedScene" uid="uid://curu7rppru73" path="res://escenas/edificios/producion/edificio_hospital.tscn" id="9_dg7ii"]
+[ext_resource type="PackedScene" uid="uid://py03c48qf5wh" path="res://escenas/UI/grid_preview.tscn" id="10_dg7ii"]
+[ext_resource type="PackedScene" uid="uid://ccgbp7mje16is" path="res://escenas/UI/canvas_construction.tscn" id="11_acisx"]
+[ext_resource type="PackedScene" uid="uid://c1u3wb0jgq06l" path="res://escenas/UI/canvas_player_info.tscn" id="12_acisx"]
+[ext_resource type="PackedScene" uid="uid://dxywk6t56y7d5" path="res://escenas/world/camera_world.tscn" id="13_a5wrc"]
+[ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/colony_manager.gd" id="13_acisx"]
+[ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/canvas_production.tscn" id="13_ueiap"]
+[ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/canvas_edificio.tscn" id="14_a5wrc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jumxm"]
+texture = ExtResource("2_0kxa1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+3:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_26pgj"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_jumxm")
+
+[node name="Main" type="Node2D" unique_id=703610649]
+script = ExtResource("1_jwie6")
+
+[node name="CamaraController" parent="." unique_id=954015243 instance=ExtResource("13_a5wrc")]
+position = Vector2(266, 411)
+
+[node name="ColonyManager" type="Node" parent="." unique_id=118493793]
+script = ExtResource("13_acisx")
+
+[node name="CanvasManager" type="Node" parent="." unique_id=1162879498]
+script = ExtResource("4_a5wrc")
+
+[node name="CanvasPlayerInfo" parent="CanvasManager" unique_id=1841923859 instance=ExtResource("12_acisx")]
+
+[node name="CanvasProduction" parent="CanvasManager" unique_id=456217419 instance=ExtResource("13_ueiap")]
+
+[node name="CanvasConstruccion" parent="CanvasManager" unique_id=544317363 instance=ExtResource("11_acisx")]
+
+[node name="CanvasEdificios" parent="CanvasManager" unique_id=287839892 instance=ExtResource("14_a5wrc")]
+visible = false
+
+[node name="CanvasTimeInfo" parent="CanvasManager" unique_id=406368256 instance=ExtResource("7_7an46")]
+
+[node name="Background" parent="." unique_id=1163633757 instance=ExtResource("2_a8p2b")]
+position = Vector2(-120, 181)
+
+[node name="tilemap" type="Node2D" parent="." unique_id=1895385000]
+position = Vector2(481, 280)
+
+[node name="foreground" type="TileMapLayer" parent="tilemap" unique_id=186163705]
+light_mask = 2
+visibility_layer = 2
+tile_map_data = PackedByteArray("AADw/wsAAAAFAAMAAADx/wsAAAAFAAMAAADy/wsAAAAFAAMAAADz/wsAAAAFAAMAAAD0/wsAAAAFAAMAAAD1/wsAAAAFAAMAAAD2/wsAAAAFAAMAAAD3/wsAAAAFAAMAAAD4/wsAAAAFAAMAAAD5/wsAAAAFAAMAAAD6/wsAAAAFAAMAAAD7/wsAAAAFAAMAAAD8/wsAAAAFAAMAAAD9/wsAAAAFAAMAAAD+/wsAAAAFAAMAAAD//wsAAAAFAAMAAAAAAAsAAAAFAAMAAAABAAsAAAAGAAMAAAACAAsAAAAGAAIAAAADAAsAAAAHAAIAAAAEAAsAAAAGAAIAAAAFAAsAAAAHAAIAAAAGAAsAAAAGAAIAAAAHAAsAAAAHAAIAAAAIAAsAAAAGAAIAAAAJAAsAAAAHAAIAAAAKAAsAAAAGAAIAAAALAAsAAAAGAAIAAADw/wwAAAAFAAQAAADx/wwAAAAFAAQAAADy/wwAAAAFAAQAAADz/wwAAAAFAAQAAAD0/wwAAAAFAAQAAAD1/wwAAAAFAAQAAAD2/wwAAAAFAAQAAAD3/wwAAAAFAAQAAAD4/wwAAAAFAAQAAAD5/wwAAAAFAAQAAAD6/wwAAAAFAAQAAAD7/wwAAAAFAAQAAAD8/wwAAAAFAAQAAAD9/wwAAAAFAAQAAAD+/wwAAAAFAAQAAAD//wwAAAAFAAQAAAAAAAwAAAAFAAQAAAABAAwAAAAGAAQAAADv/wsAAAAFAAMAAADu/wsAAAAFAAMAAADt/wsAAAAFAAMAAADs/wsAAAAFAAMAAADr/wsAAAAFAAMAAADq/wsAAAAFAAMAAADp/wsAAAAFAAMAAADo/wsAAAAFAAMAAADn/wsAAAAFAAMAAADm/wsAAAAFAAMAAADl/wsAAAAFAAMAAADk/wsAAAAFAAMAAADj/wsAAAAFAAMAAADi/wsAAAAEAAMAAADi/wwAAAAEAAQAAADj/wwAAAAFAAQAAADk/wwAAAAFAAQAAADl/wwAAAAFAAQAAADm/wwAAAAFAAQAAADn/wwAAAAFAAQAAADo/wwAAAAFAAQAAADp/wwAAAAFAAQAAADq/wwAAAAFAAQAAADr/wwAAAAFAAQAAADs/wwAAAAFAAQAAADt/wwAAAAFAAQAAADu/wwAAAAFAAQAAADv/wwAAAAFAAQAAAA=")
+tile_set = SubResource("TileSet_26pgj")
+
+[node name="EdificioArea2" parent="." unique_id=1625324867 instance=ExtResource("5_lyxkq")]
+position = Vector2(224, 448)
+
+[node name="EdificioHospital2" parent="." unique_id=465232224 instance=ExtResource("9_dg7ii")]
+position = Vector2(224, 432)
+
+[node name="GridPreview" parent="." unique_id=553268723 instance=ExtResource("10_dg7ii")]
+visible = false

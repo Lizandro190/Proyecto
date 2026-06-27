@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://qeqsx1sryelb"]
+
+[ext_resource type="PackedScene" uid="uid://cj77yeyg4r7iq" path="res://escenas/edificios/casa/edificio_casa.tscn" id="1_3bcai"]
+[ext_resource type="Script" uid="uid://cjr387mk5lasv" path="res://edificio_casa_basica.gd" id="2_3yy7t"]
+[ext_resource type="Texture2D" uid="uid://ccioj1137gvb6" path="res://sprites/edificios/casa/casa_basica.png" id="3_t75jj"]
+
+[node name="EdificioCasaBasica" unique_id=1820453355 instance=ExtResource("1_3bcai")]
+
+[node name="EdificioArea" parent="." index="0" unique_id=652046842]
+script = ExtResource("2_3yy7t")
+
+[node name="Sprite2D" parent="EdificioArea" index="0" unique_id=105823674]
+texture = ExtResource("3_t75jj")

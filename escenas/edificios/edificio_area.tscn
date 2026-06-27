@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bxgotn5agorp1"]
+
+[ext_resource type="Script" uid="uid://d3vyhe2u45d1x" path="res://scripts/edificio/edificio_area.gd" id="1_cd0os"]
+[ext_resource type="Texture2D" uid="uid://dgx10qt68lefn" path="res://sprites/edificios/sprite_edificio_default.png" id="2_16obr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqnxk"]
+size = Vector2(14, 14)
+
+[node name="EdificioArea" type="Node2D" unique_id=1820453355]
+
+[node name="AreaInteraccion" type="Area2D" parent="." unique_id=652046842]
+light_mask = 2
+visibility_layer = 2
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_cd0os")
+
+[node name="Sprite2D" type="Sprite2D" parent="AreaInteraccion" unique_id=105823674]
+texture = ExtResource("2_16obr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaInteraccion" unique_id=49951307]
+shape = SubResource("RectangleShape2D_iqnxk")
