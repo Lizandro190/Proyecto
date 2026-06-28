@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bl48xjm5vm7ix"]
 
-[ext_resource type="Script" uid="uid://bt0uci6bs4lff" path="res://scripts/background/background.gd" id="1_eqkr7"]
+[ext_resource type="Script" uid="uid://bt0uci6bs4lff" path="res://scripts/world/background/background.gd" id="1_eqkr7"]
 [ext_resource type="Texture2D" uid="uid://d3jjbjg5wntdl" path="res://sprites/tilemaps/fondo/background_azul_plano.png" id="2_jgano"]
 [ext_resource type="Texture2D" uid="uid://dx2q6sm48nxbd" path="res://sprites/tilemaps/fondo/estrella_animated.png" id="3_b46hm"]
 
@@ -21,7 +21,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_splo0")
 }],
-"loop": true,
+"loop": 1,
 "name": &"parpadeando",
 "speed": 1.0
 }]

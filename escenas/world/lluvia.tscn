@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mi4krb415q8x"]
 
-[ext_resource type="Script" uid="uid://dysae57pbn52r" path="res://scripts/background/lluvia.gd" id="1_yos5b"]
+[ext_resource type="Script" uid="uid://dysae57pbn52r" path="res://scripts/world/background/lluvia.gd" id="1_yos5b"]
 [ext_resource type="Texture2D" uid="uid://d0sg4qahfqdif" path="res://sprites/clima/lluvia_enorme-Sheet.png" id="2_yos5b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cmk6n"]
@@ -181,7 +181,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_sgqwc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"lluvia",
 "speed": 17.0
 }]
@@ -193,10 +193,11 @@ script = ExtResource("1_yos5b")
 position = Vector2(44, 366)
 sprite_frames = SubResource("SpriteFrames_jwtir")
 animation = &"lluvia"
-frame_progress = 0.9092536
+frame = 2
+frame_progress = 0.36548078
 
 [node name="Dos" type="AnimatedSprite2D" parent="." unique_id=82101454]
 position = Vector2(418, 365)
 sprite_frames = SubResource("SpriteFrames_jwtir")
 animation = &"lluvia"
-frame_progress = 0.7871033
+frame_progress = 0.1774612

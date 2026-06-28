@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c27lprl8gr7mf"]
 
-[ext_resource type="Script" uid="uid://ccwtcxt8jp5f8" path="res://scripts/personajes/colecion_nombres.gd" id="1_xs6dc"]
+[ext_resource type="Script" uid="uid://ccwtcxt8jp5f8" path="res://scripts/personajes/utilidades/colecion_nombres.gd" id="1_xs6dc"]
 
 [node name="ColecionNombres" type="Node2D" unique_id=1642882625]
 

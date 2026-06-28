@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://b4x2ja5vxijgv"]
-
-[ext_resource type="Script" uid="uid://b4tb3bpbq3jbb" path="res://scripts/personajes/base_control.gd" id="1_nkh5b"]
-
-[node name="BaseControl" type="Node" unique_id=1701135460]
-script = ExtResource("1_nkh5b")

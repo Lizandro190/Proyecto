@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://s5pu6jcblnud"]
+
+[ext_resource type="PackedScene" uid="uid://db4mn2nydwwvp" path="res://escenas/UI/canvas_vbox.tscn" id="1_v24xd"]
+[ext_resource type="Script" uid="uid://bb6c85njml7uf" path="res://scripts/UI/information_personaje_complete/canvas_character_complete.gd" id="2_85306"]
+[ext_resource type="Texture2D" uid="uid://7230ifh2dtxy" path="res://sprites/iconos/tacha.png" id="2_peln3"]
+[ext_resource type="Script" uid="uid://cjklrssui5okn" path="res://scripts/UI/information_personaje_complete/panel_container.gd" id="3_aqwiw"]
+[ext_resource type="Script" uid="uid://ccrtapd53owtl" path="res://scripts/UI/information_personaje_complete/cruz.gd" id="4_n0j0y"]
+
+[node name="CanvasCharacterInfoComplete" unique_id=1891169190 instance=ExtResource("1_v24xd")]
+script = ExtResource("2_85306")
+
+[node name="PanelContainer" parent="." index="0" unique_id=1228616084]
+offset_left = 82.0
+offset_top = 41.0
+offset_right = 218.0
+offset_bottom = 140.0
+size_flags_horizontal = 4
+script = ExtResource("3_aqwiw")
+
+[node name="MarginContainer" parent="PanelContainer" index="0" unique_id=785842594]
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="BoxNombreCompleto" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(763291066) index="0" unique_id=110733418]
+layout_mode = 2
+
+[node name="NombreFijoBox" type="AspectRatioContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto" index="0" unique_id=278027100]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+alignment_horizontal = 0
+alignment_vertical = 0
+
+[node name="NombreFijo" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto/NombreFijoBox" index="0" unique_id=156646728]
+layout_mode = 2
+text = "N. completo"
+
+[node name="NombreBox" type="AspectRatioContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto" index="1" unique_id=724028453]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+
+[node name="NombreCompleto" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto/NombreBox" index="0" unique_id=348928965]
+layout_mode = 2
+
+[node name="Cruz" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto" index="2" unique_id=1529420609]
+layout_mode = 2
+texture = ExtResource("2_peln3")
+stretch_mode = 3
+script = ExtResource("4_n0j0y")
+
+[node name="BoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(763291066) index="1" unique_id=1500721996]
+layout_mode = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer" index="0" unique_id=1016965889]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+alignment_horizontal = 0
+alignment_vertical = 0
+
+[node name="Descripcion" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/AspectRatioContainer" index="0" unique_id=578361998]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+text = "Le gustan mucho los días de lluvia y suele disfrutar de la tranquilidad que traen. Es una persona amable con quienes la rodean y procura ayudar cuando puede. Prefiere pasar tiempo en la naturaleza antes que en lugares concurridos. Cuando tiene tiempo libre suele visitar arcades y experimentar con computadoras. En su forma de vestir prioriza la comodidad por encima de la moda."
+autowrap_mode = 2
+
+[connection signal="gui_input" from="PanelContainer" to="PanelContainer" method="_on_gui_input"]
+[connection signal="gui_input" from="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto/Cruz" to="PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto/Cruz" method="_on_gui_input"]

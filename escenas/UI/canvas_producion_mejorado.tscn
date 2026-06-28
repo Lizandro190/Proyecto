@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://dj4p1citbymar"]
-
-[ext_resource type="PackedScene" uid="uid://dojs7kpyobyk4" path="res://escenas/UI/canvas_padre_grid.tscn" id="1_dxa40"]
-
-[node name="CanvasPadre" unique_id=406368256 instance=ExtResource("1_dxa40")]

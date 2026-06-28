@@ -5,7 +5,6 @@ class_name PersonajePadre extends CharacterBody2D
 @onready var type_control: TypeControl = $TypeControl
 @onready var build_asigned: BuildsAsigned = $BuildsAsigned
 @onready var player_ubication: PlayerUbication = $PlayerUbication
-@onready var material_producion: MaterialProducion  = $MaterialProducion
 @onready var player_state: PlayerState = $PlayerState
 @onready var player_info: PlayerInfo = $PlayerInfo
 

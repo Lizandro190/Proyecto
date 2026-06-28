@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://wsf0ek66x0rs"]
+
+[ext_resource type="PackedScene" uid="uid://dojs7kpyobyk4" path="res://escenas/UI/canvas_grid.tscn" id="1_tsss0"]
+[ext_resource type="Texture2D" uid="uid://4edgmk6pldck" path="res://sprites/edificios/producion/sprite_mina.png" id="2_htmd7"]
+[ext_resource type="Texture2D" uid="uid://ccioj1137gvb6" path="res://sprites/edificios/casa/casa_basica.png" id="3_btopo"]
+
+[node name="CanvasEdificios" unique_id=406368256 instance=ExtResource("1_tsss0")]
+script = null
+
+[node name="PanelContainer" parent="." index="0" unique_id=1131247355]
+offset_left = 2.0
+offset_top = 27.0
+offset_right = 53.0
+offset_bottom = 65.0
+
+[node name="MarginContainer" parent="PanelContainer" index="0" unique_id=2048456077]
+theme_override_constants/margin_left = 1
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 1
+theme_override_constants/margin_bottom = 0
+
+[node name="GridContainer" parent="PanelContainer/MarginContainer" index="0" unique_id=151003867]
+columns = 2
+
+[node name="Produccion" type="TextureRect" parent="PanelContainer/MarginContainer/GridContainer" index="0" unique_id=938281897]
+layout_mode = 2
+texture = ExtResource("2_htmd7")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/GridContainer" index="1" unique_id=1154772986]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "constrs."
+
+[node name="Hogar" type="TextureRect" parent="PanelContainer/MarginContainer/GridContainer" index="2" unique_id=749068562]
+layout_mode = 2
+texture = ExtResource("3_btopo")
+stretch_mode = 3
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/GridContainer" index="3" unique_id=480742301]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "hogar"

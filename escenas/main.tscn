@@ -3,19 +3,18 @@
 [ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main/main.gd" id="1_jwie6"]
 [ext_resource type="Texture2D" uid="uid://414aovpq2rse" path="res://sprites/tilemaps/spritesJuntos.png" id="2_0kxa1"]
 [ext_resource type="PackedScene" uid="uid://bl48xjm5vm7ix" path="res://escenas/world/background.tscn" id="2_a8p2b"]
-[ext_resource type="PackedScene" uid="uid://bokh7uj8tjtco" path="res://escenas/game_manager.tscn" id="3_ueiap"]
-[ext_resource type="Script" uid="uid://cl4sqy68eic6j" path="res://scripts/main/canvas_manager.gd" id="4_a5wrc"]
-[ext_resource type="PackedScene" uid="uid://xx60ssannu10" path="res://escenas/UI/canvas_character_info.tscn" id="5_a5wrc"]
+[ext_resource type="PackedScene" uid="uid://bokh7uj8tjtco" path="res://escenas/world/production/game_manager.tscn" id="3_ueiap"]
+[ext_resource type="Script" uid="uid://cl4sqy68eic6j" path="res://scripts/main/manager/canvas_manager.gd" id="4_a5wrc"]
+[ext_resource type="PackedScene" uid="uid://xx60ssannu10" path="res://escenas/UI/character/canvas_character_info.tscn" id="5_a5wrc"]
 [ext_resource type="PackedScene" uid="uid://c46i2syjfjohp" path="res://escenas/edificios/producion/edificio_madera.tscn" id="5_lyxkq"]
-[ext_resource type="PackedScene" uid="uid://d4bqvadwjt6tp" path="res://escenas/UI/canvas_time_info.tscn" id="7_7an46"]
-[ext_resource type="PackedScene" uid="uid://s5pu6jcblnud" path="res://escenas/UI/canvas_character_info_completed.tscn" id="7_ymkly"]
+[ext_resource type="PackedScene" uid="uid://d4bqvadwjt6tp" path="res://escenas/UI/time/canvas_time_info.tscn" id="7_7an46"]
+[ext_resource type="PackedScene" uid="uid://s5pu6jcblnud" path="res://escenas/UI/character/canvas_character_info_completed.tscn" id="7_ymkly"]
 [ext_resource type="PackedScene" uid="uid://curu7rppru73" path="res://escenas/edificios/producion/edificio_hospital.tscn" id="9_dg7ii"]
-[ext_resource type="PackedScene" uid="uid://py03c48qf5wh" path="res://escenas/UI/grid_preview.tscn" id="10_dg7ii"]
-[ext_resource type="PackedScene" uid="uid://ccgbp7mje16is" path="res://escenas/UI/canvas_construction.tscn" id="11_acisx"]
+[ext_resource type="PackedScene" uid="uid://ccgbp7mje16is" path="res://escenas/UI/construccion/canvas_construction.tscn" id="11_acisx"]
 [ext_resource type="PackedScene" uid="uid://dxywk6t56y7d5" path="res://escenas/world/camera_world.tscn" id="13_a5wrc"]
-[ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/colony_manager.gd" id="13_acisx"]
-[ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/canvas_production.tscn" id="13_ueiap"]
-[ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/canvas_edificio.tscn" id="14_a5wrc"]
+[ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/manager/colony_manager.gd" id="13_acisx"]
+[ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/produccion/canvas_production.tscn" id="13_ueiap"]
+[ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/construccion/canvas_edificio.tscn" id="14_a5wrc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jumxm"]
 texture = ExtResource("2_0kxa1")
@@ -80,21 +79,21 @@ position = Vector2(266, 411)
 [node name="ColonyManager" type="Node" parent="GameManager" unique_id=118493793]
 script = ExtResource("13_acisx")
 
-[node name="CanvasManager" type="Node" parent="GameManager" unique_id=1162879498]
+[node name="CanvasManager" type="Node" parent="." unique_id=1162879498]
 script = ExtResource("4_a5wrc")
 
-[node name="CanvasCharacterInfo" parent="GameManager/CanvasManager" unique_id=1891169190 instance=ExtResource("5_a5wrc")]
+[node name="CanvasCharacterInfo" parent="CanvasManager" unique_id=1891169190 instance=ExtResource("5_a5wrc")]
 
-[node name="CanvasCharacterInfoComplete" parent="GameManager/CanvasManager" unique_id=27352123 instance=ExtResource("7_ymkly")]
+[node name="CanvasCharacterInfoComplete" parent="CanvasManager" unique_id=27352123 instance=ExtResource("7_ymkly")]
 
-[node name="CanvasProduction" parent="GameManager/CanvasManager" unique_id=456217419 instance=ExtResource("13_ueiap")]
+[node name="CanvasProduction" parent="CanvasManager" unique_id=456217419 instance=ExtResource("13_ueiap")]
 
-[node name="CanvasConstruccion" parent="GameManager/CanvasManager" unique_id=544317363 instance=ExtResource("11_acisx")]
+[node name="CanvasConstruccion" parent="CanvasManager" unique_id=544317363 instance=ExtResource("11_acisx")]
 
-[node name="CanvasEdificios" parent="GameManager/CanvasManager" unique_id=287839892 instance=ExtResource("14_a5wrc")]
+[node name="CanvasEdificios" parent="CanvasManager" unique_id=287839892 instance=ExtResource("14_a5wrc")]
 visible = false
 
-[node name="CanvasTimeInfo" parent="GameManager/CanvasManager" unique_id=406368256 instance=ExtResource("7_7an46")]
+[node name="CanvasTimeInfo" parent="CanvasManager" unique_id=406368256 instance=ExtResource("7_7an46")]
 
 [node name="Background" parent="." unique_id=1163633757 instance=ExtResource("2_a8p2b")]
 position = Vector2(-120, 181)
@@ -113,6 +112,3 @@ position = Vector2(224, 448)
 
 [node name="EdificioHospital2" parent="." unique_id=465232224 instance=ExtResource("9_dg7ii")]
 position = Vector2(224, 432)
-
-[node name="GridPreview" parent="." unique_id=553268723 instance=ExtResource("10_dg7ii")]
-visible = false
