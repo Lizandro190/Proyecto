@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ryxiyw5wehgt"]
 
-[ext_resource type="Script" uid="uid://bq0hpo01j2ckn" path="res://scripts/world_general_info/production_manager.gd" id="1_sg1k3"]
+[ext_resource type="Script" uid="uid://bq0hpo01j2ckn" path="res://scripts/single_world_info/production_manager.gd" id="1_sg1k3"]
 
 [node name="ProductionManager" type="Node" unique_id=1248114343]
 script = ExtResource("1_sg1k3")

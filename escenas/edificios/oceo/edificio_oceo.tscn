@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://q3fhm6kdfjbf"]
 
 [ext_resource type="PackedScene" uid="uid://bxgotn5agorp1" path="res://escenas/edificios/edificio_area.tscn" id="1_ax58h"]
-[ext_resource type="Script" uid="uid://brw53uvfb1eq8" path="res://scripts/edificio/edificio_ocio.gd" id="2_b5cc5"]
+[ext_resource type="Script" uid="uid://brw53uvfb1eq8" path="res://scripts/edificio/oce/edificio_ocio.gd" id="2_b5cc5"]
 
 [node name="EdificioOceo" unique_id=1820453355 instance=ExtResource("1_ax58h")]
 

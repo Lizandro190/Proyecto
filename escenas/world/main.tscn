@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dqanecmaxknr6"]
 
-[ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main.gd" id="1_uqaee"]
+[ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main/main.gd" id="1_uqaee"]
 [ext_resource type="PackedScene" uid="uid://dxywk6t56y7d5" path="res://escenas/world/camera_world.tscn" id="2_3oncl"]
 [ext_resource type="Script" uid="uid://bs2g5nnc3jxmt" path="res://scripts/main/game_manager.gd" id="2_faq4e"]
 [ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/colony_manager.gd" id="3_faq4e"]

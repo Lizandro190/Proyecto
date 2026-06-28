@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c46i2syjfjohp"]
 
 [ext_resource type="PackedScene" uid="uid://bxgotn5agorp1" path="res://escenas/edificios/edificio_area.tscn" id="1_ctdw2"]
-[ext_resource type="Script" uid="uid://eoj3wtakmksd" path="res://scripts/edificio/edificio_madera.gd" id="2_ldy0q"]
+[ext_resource type="Script" uid="uid://eoj3wtakmksd" path="res://scripts/edificio/produccion/edificio_madera.gd" id="2_ldy0q"]
 [ext_resource type="Texture2D" uid="uid://csf3lar1647oh" path="res://sprites/edificios/producion/sprite_edificio_madera.png" id="3_sj5qj"]
 
 [node name="EdificioMadera" unique_id=1820453355 instance=ExtResource("1_ctdw2")]

@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://wdcw526on6fy"]
 
-[ext_resource type="Script" uid="uid://cu1qgkiguwju7" path="res://scripts/world_general_info/single_info.gd" id="1_2anac"]
-[ext_resource type="Script" uid="uid://cey3e5qkotm8y" path="res://scripts/world_general_info/world_player_info.gd" id="2_gy2d8"]
-[ext_resource type="Script" uid="uid://dhkg37jex0vtn" path="res://scripts/world_general_info/horario_world.gd" id="3_p42a5"]
-[ext_resource type="Script" uid="uid://dkk47m700tacg" path="res://scripts/world_general_info/world_weather_info.gd" id="4_ituyo"]
-[ext_resource type="Script" uid="uid://bxwrl5d1towp7" path="res://scripts/world_general_info/world_tick_global.gd" id="5_mdcpr"]
-[ext_resource type="Script" uid="uid://bihso2db3bk45" path="res://scripts/world_general_info/production_global.gd" id="6_gy2d8"]
-[ext_resource type="Script" uid="uid://dsb3r5kldncve" path="res://scripts/world_general_info/world_state.gd" id="7_p42a5"]
-[ext_resource type="Script" uid="uid://b8f7dru5rt0uc" path="res://scripts/world_general_info/eventos.gd" id="8_ituyo"]
+[ext_resource type="Script" uid="uid://cu1qgkiguwju7" path="res://scripts/single_world_info/single_info.gd" id="1_2anac"]
+[ext_resource type="Script" uid="uid://cey3e5qkotm8y" path="res://scripts/single_world_info/world_player_info.gd" id="2_gy2d8"]
+[ext_resource type="Script" uid="uid://dhkg37jex0vtn" path="res://scripts/single_world_info/horario_world.gd" id="3_p42a5"]
+[ext_resource type="Script" uid="uid://dkk47m700tacg" path="res://scripts/single_world_info/world_weather_info.gd" id="4_ituyo"]
+[ext_resource type="Script" uid="uid://bxwrl5d1towp7" path="res://scripts/single_world_info/world_tick_global.gd" id="5_mdcpr"]
+[ext_resource type="Script" uid="uid://bihso2db3bk45" path="res://scripts/single_world_info/production_global.gd" id="6_gy2d8"]
+[ext_resource type="Script" uid="uid://dsb3r5kldncve" path="res://scripts/single_world_info/world_state.gd" id="7_p42a5"]
+[ext_resource type="Script" uid="uid://b8f7dru5rt0uc" path="res://scripts/single_world_info/eventos.gd" id="8_ituyo"]
 
 [node name="SingletonInfo" type="Node2D" unique_id=2056781733]
 script = ExtResource("1_2anac")

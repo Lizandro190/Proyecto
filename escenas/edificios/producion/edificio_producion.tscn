@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2tgq3gmdovja"]
 
 [ext_resource type="PackedScene" uid="uid://bxgotn5agorp1" path="res://escenas/edificios/edificio_area.tscn" id="1_cy8e5"]
-[ext_resource type="Script" uid="uid://blti6sey5hwdn" path="res://scripts/edificio/edificio_producion.gd" id="2_emoxs"]
+[ext_resource type="Script" uid="uid://blti6sey5hwdn" path="res://scripts/edificio/produccion/edificio_producion.gd" id="2_emoxs"]
 
 [node name="EdificioProducion" unique_id=1820453355 instance=ExtResource("1_cy8e5")]
 

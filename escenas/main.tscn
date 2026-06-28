@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://uf47tt4y2fl5"]
 
-[ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main.gd" id="1_jwie6"]
+[ext_resource type="Script" uid="uid://bqie8rkomiiod" path="res://scripts/main/main.gd" id="1_jwie6"]
 [ext_resource type="Texture2D" uid="uid://414aovpq2rse" path="res://sprites/tilemaps/spritesJuntos.png" id="2_0kxa1"]
 [ext_resource type="PackedScene" uid="uid://bl48xjm5vm7ix" path="res://escenas/world/background.tscn" id="2_a8p2b"]
 [ext_resource type="PackedScene" uid="uid://bokh7uj8tjtco" path="res://escenas/game_manager.tscn" id="3_ueiap"]

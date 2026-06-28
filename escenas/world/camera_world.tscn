@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dxywk6t56y7d5"]
 
-[ext_resource type="Script" uid="uid://dhq85gexx61ln" path="res://scripts/camera_world.gd" id="1_uuane"]
-[ext_resource type="Script" uid="uid://cj8rl5nm0to06" path="res://scripts/camera_manager.gd" id="1_vhcn7"]
+[ext_resource type="Script" uid="uid://dhq85gexx61ln" path="res://scripts/camara/camera_world.gd" id="1_uuane"]
+[ext_resource type="Script" uid="uid://cj8rl5nm0to06" path="res://scripts/camara/camera_manager.gd" id="1_vhcn7"]
 
 [node name="CameraManager" type="Node2D" unique_id=954015243]
 script = ExtResource("1_vhcn7")

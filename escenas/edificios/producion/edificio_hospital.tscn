@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://curu7rppru73"]
 
 [ext_resource type="PackedScene" uid="uid://c2tgq3gmdovja" path="res://escenas/edificios/producion/edificio_producion.tscn" id="1_eu72l"]
-[ext_resource type="Script" uid="uid://ebufy1n8lmfb" path="res://scripts/edificio/edificio_hospital.gd" id="2_usdxl"]
+[ext_resource type="Script" uid="uid://ebufy1n8lmfb" path="res://scripts/edificio/produccion/edificio_hospital.gd" id="2_usdxl"]
 [ext_resource type="Texture2D" uid="uid://buunkx6w75af7" path="res://sprites/edificios/producion/sprite_edificio_hospital.png" id="3_n7e2e"]
 
 [node name="EdificioHospital" unique_id=1820453355 instance=ExtResource("1_eu72l")]
