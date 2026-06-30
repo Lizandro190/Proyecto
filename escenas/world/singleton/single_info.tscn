@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://bihso2db3bk45" path="res://scripts/world/single_info/production_global.gd" id="6_gy2d8"]
 [ext_resource type="Script" uid="uid://dsb3r5kldncve" path="res://scripts/world/single_info/world_state.gd" id="7_p42a5"]
 [ext_resource type="Script" uid="uid://b8f7dru5rt0uc" path="res://scripts/world/single_info/eventos.gd" id="8_ituyo"]
+[ext_resource type="Script" uid="uid://dbjdfveqjqna4" path="res://scripts/world/single_info/world_info.gd" id="9_hg7nb"]
+[ext_resource type="Script" uid="uid://d4mmf2jotpc6n" path="res://scripts/world/single_info/build_info.gd" id="10_psv0w"]
 
 [node name="SingletonInfo" type="Node2D" unique_id=2056781733]
 script = ExtResource("1_2anac")
@@ -32,3 +34,9 @@ script = ExtResource("7_p42a5")
 
 [node name="Events" type="Node" parent="." unique_id=1826824867]
 script = ExtResource("8_ituyo")
+
+[node name="WorldInfo" type="Node" parent="." unique_id=1563131549]
+script = ExtResource("9_hg7nb")
+
+[node name="BuildInfo" type="Node" parent="." unique_id=285997375]
+script = ExtResource("10_psv0w")

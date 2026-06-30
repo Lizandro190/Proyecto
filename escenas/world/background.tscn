@@ -30,8 +30,8 @@ animations = [{
 script = ExtResource("1_eqkr7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=4087048]
-position = Vector2(283.50003, 211.5)
-scale = Vector2(69.5625, 48.3125)
+position = Vector2(303.5, -103.49997)
+scale = Vector2(75.9375, 100.81249)
 texture = ExtResource("2_jgano")
 
 [node name="EstrellaUno" type="AnimatedSprite2D" parent="." unique_id=1788508303]

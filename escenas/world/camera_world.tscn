@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://cj8rl5nm0to06" path="res://scripts/main/manager/camera_manager.gd" id="1_vhcn7"]
 
 [node name="CameraManager" type="Node2D" unique_id=954015243]
+position = Vector2(320, 412)
 script = ExtResource("1_vhcn7")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1405222890]
-position = Vector2(-2, 1)
+position = Vector2(56, -10)
 script = ExtResource("1_uuane")
