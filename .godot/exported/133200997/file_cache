@@ -30,5 +30,5 @@ res://escenas/world/foreground.tscn::f02dde98505f47fc07d4126b878989c0::178182927
 res://escenas/world/lluvia.tscn::ffa5488020d80f7cebde895591b6e9f0::1782625492::res://.godot/exported/133200997/export-09e64f55d9c3155a06e7ff7f793bd2d1-lluvia.scn
 res://escenas/world/main.tscn::3eb705b6ab4700fa39aa7b99c610bdb7::1782625530::res://.godot/exported/133200997/export-9340532e442b707c691d2faf41ba354f-main.scn
 res://escenas/world/world_grid.tscn::b3a0f026dece46a9f4483722d7b5d7cd::1781829275::res://.godot/exported/133200997/export-0fe684bc2831554c17781a71b1f30097-world_grid.scn
-res://escenas/main.tscn::be05e8f762caf6d7b8c1336636a71999::1782881476::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
-res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782879826::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
+res://escenas/main.tscn::c8d29ecdb53085eee22629e08f2b30f2::1782882540::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
+res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782882540::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res

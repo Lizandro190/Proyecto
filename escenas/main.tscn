@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/manager/colony_manager.gd" id="13_acisx"]
 [ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/produccion/canvas_production.tscn" id="13_ueiap"]
 [ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/construccion/canvas_edificio.tscn" id="14_a5wrc"]
+[ext_resource type="PackedScene" uid="uid://c63egoqdymu1o" path="res://escenas/edificios/producion/edificio_mina.tscn" id="16_ymkly"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jumxm"]
 texture = ExtResource("2_0kxa1")
@@ -111,3 +112,6 @@ position = Vector2(216, 440)
 
 [node name="EdificioProducion" parent="." unique_id=1820453355 instance=ExtResource("9_dg7ii")]
 position = Vector2(216, 424)
+
+[node name="EdificioMina" parent="." unique_id=1107097430 instance=ExtResource("16_ymkly")]
+position = Vector2(300, 440)
