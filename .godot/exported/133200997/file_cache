@@ -3,9 +3,9 @@ res://escenas/edificios/oceo/edificio_oceo.tscn::40a57c1664cb11318019a71c02a7a0d
 res://escenas/edificios/producion/edificio_hospital.tscn::d0d85160543efbd4604c44c88cc86511::1782881455::res://.godot/exported/133200997/export-11a3fb8a7fd900410b444a7d6640d411-edificio_hospital.scn
 res://escenas/edificios/producion/edificio_madera.tscn::3374f6f44e1ece9df3c130e60fee21a9::1782615456::res://.godot/exported/133200997/export-3ec4e94d28920971142824c4ae9a6d6c-edificio_madera.scn
 res://escenas/edificios/producion/edificio_producion.tscn::bc9611951c0e5be0dd9088dab226c4a2::1782615470::res://.godot/exported/133200997/export-d30d6238186e98ac2cc6885838f97c9e-edificio_producion.scn
-res://escenas/edificios/edificio_area.tscn::696aa2288e645b6cfc8a25f8a5828387::1781829274::res://.godot/exported/133200997/export-c05fa864da2e27b87becb8e43fe99057-edificio_area.scn
+res://escenas/edificios/edificio_area.tscn::fddf30d3c8806cd68bd51ea0dcf7bc1b::1782919718::res://.godot/exported/133200997/export-c05fa864da2e27b87becb8e43fe99057-edificio_area.scn
 res://escenas/personajes/utilides/colecion_nombres.tscn::132adbe0bb92d53b84bae63f0bb65c7f::1782625698::res://.godot/exported/133200997/export-27538d70fc49dff365f2ed6c3594d1d7-colecion_nombres.scn
-res://escenas/personajes/personaje_colono.tscn::cf80cf1eb0667eb100a55ecf4424f18f::1782626028::res://.godot/exported/133200997/export-af38bf4d30f01ad9c0bbf3598974735a-personaje_colono.scn
+res://escenas/personajes/personaje_colono.tscn::3998eb0008a97a117184f28a3afcf891::1782919673::res://.godot/exported/133200997/export-af38bf4d30f01ad9c0bbf3598974735a-personaje_colono.scn
 res://escenas/personajes/personaje_padre.tscn::985467f5648376054b1cf29f475fcab3::1782248339::res://.godot/exported/133200997/export-3d88a1cf66cdb966cd7705aee5376791-personaje_padre.scn
 res://escenas/UI/character/canvas_character_info.tscn::85912cca3d976dab74b3edb3e622ebb6::1782625140::res://.godot/exported/133200997/export-accae111c59a53b8bca41d4f32c004b0-canvas_character_info.scn
 res://escenas/UI/character/canvas_character_info_completed.tscn::8b575e1437c06a1831f07e674dd61e7e::1782625140::res://.godot/exported/133200997/export-24829e5e58d005bcb31221bd4a4d010e-canvas_character_info_completed.scn
@@ -13,7 +13,7 @@ res://escenas/UI/construccion/canvas_construction.tscn::54fef6bc00f69d5c7122eaa4
 res://escenas/UI/construccion/canvas_edificio.tscn::587ba76708c494582022f365dc44be79::1782625254::res://.godot/exported/133200997/export-24186b48c684570e9bbc097c40a4cabb-canvas_edificio.scn
 res://escenas/UI/construccion/canvas_grid_preview.tscn::e673bdf4e38ed5c88c2ccd92a659af72::1781993648::res://.godot/exported/133200997/export-78b0fa7ba273f53988ddf3e0fe862485-canvas_grid_preview.scn
 res://escenas/UI/produccion/canvas_production.tscn::1953e8ea22d60281e8457d372a592332::1782625549::res://.godot/exported/133200997/export-9e330895a1b63827b9e2de85cff1720a-canvas_production.scn
-res://escenas/UI/time/canvas_time_info.tscn::1603f963efcf9673e26431bcbc5ae797::1782625213::res://.godot/exported/133200997/export-881efaa1f6bb254bf5428a7ab06aecdb-canvas_time_info.scn
+res://escenas/UI/time/canvas_time_info.tscn::1603f963efcf9673e26431bcbc5ae797::1782921959::res://.godot/exported/133200997/export-881efaa1f6bb254bf5428a7ab06aecdb-canvas_time_info.scn
 res://escenas/UI/canvas_grid.tscn::7186a022c4f8e6339806345295ba7fb6::1782625214::res://.godot/exported/133200997/export-b504233bbd39e2a28849b510bb05f7c6-canvas_grid.scn
 res://escenas/UI/canvas_hbox.tscn::e7e7a20d3c3cfd6fec421bcd08312fa8::1781829274::res://.godot/exported/133200997/export-2a968ad30714d235aff4d45bf4608f9f-canvas_hbox.scn
 res://escenas/UI/canvas_vbox.tscn::b9225dc992c7ba74b2cd4e12180dcb1d::1781844275::res://.godot/exported/133200997/export-58ba88f309880460ffa52384ad2bd554-canvas_vbox.scn
@@ -27,6 +27,7 @@ res://escenas/world/foreground.tscn::f02dde98505f47fc07d4126b878989c0::178182927
 res://escenas/world/lluvia.tscn::ffa5488020d80f7cebde895591b6e9f0::1782625492::res://.godot/exported/133200997/export-09e64f55d9c3155a06e7ff7f793bd2d1-lluvia.scn
 res://escenas/world/main.tscn::3eb705b6ab4700fa39aa7b99c610bdb7::1782625530::res://.godot/exported/133200997/export-9340532e442b707c691d2faf41ba354f-main.scn
 res://escenas/world/world_grid.tscn::b3a0f026dece46a9f4483722d7b5d7cd::1781829275::res://.godot/exported/133200997/export-0fe684bc2831554c17781a71b1f30097-world_grid.scn
-res://escenas/main.tscn::731933dadeb799a1b590ab11930c6a3c::1782882936::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
-res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782882801::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
+res://escenas/main.tscn::3b7e5176f53ec4deed43362f3f6fbf37::1782923752::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
+res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782918944::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
 res://escenas/edificios/producion/edificio_piedra.tscn::3f181f7f4a29ad4ed2b48c0ed4ce0d8c::1782882801::res://.godot/exported/133200997/export-771d774f53ad5bcf6d107cda610a74d5-edificio_piedra.scn
+res://escenas/UI/time/canvas_time.tscn::5bdaef172b470583bb9a8ef2c789b693::1782923735::res://.godot/exported/133200997/export-79386c8bb7ce38d2683021ffbdccf1e2-canvas_time.scn
