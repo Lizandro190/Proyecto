@@ -1,7 +1,7 @@
 res://escenas/edificios/casa/edificio_casa.tscn::7ac8ffde0091df6ddc12dc3069cc0c51::1782615428::res://.godot/exported/133200997/export-f75576b767a97976b20b8d305af78944-edificio_casa.scn
 res://escenas/edificios/casa/edificio_casa_basica.tscn::99f6bcae49d097aaecee9c3102e65036::1782615436::res://.godot/exported/133200997/export-c7ae5454274174cba2830246312ef50d-edificio_casa_basica.scn
 res://escenas/edificios/oceo/edificio_oceo.tscn::40a57c1664cb11318019a71c02a7a0d2::1782615500::res://.godot/exported/133200997/export-32fc430e7cdfe76c4afecbdcca204b9c-edificio_oceo.scn
-res://escenas/edificios/producion/edificio_hospital.tscn::85e1d65de15664bdf821dd5206876033::1782615453::res://.godot/exported/133200997/export-11a3fb8a7fd900410b444a7d6640d411-edificio_hospital.scn
+res://escenas/edificios/producion/edificio_hospital.tscn::d0d85160543efbd4604c44c88cc86511::1782881455::res://.godot/exported/133200997/export-11a3fb8a7fd900410b444a7d6640d411-edificio_hospital.scn
 res://escenas/edificios/producion/edificio_madera.tscn::3374f6f44e1ece9df3c130e60fee21a9::1782615456::res://.godot/exported/133200997/export-3ec4e94d28920971142824c4ae9a6d6c-edificio_madera.scn
 res://escenas/edificios/producion/edificio_mina.tscn::a490454e6266bd3a98d1f703b655ff9d::1782615460::res://.godot/exported/133200997/export-2b755ffb472b42c1964327fe0ef025ad-edificio_mina.scn
 res://escenas/edificios/producion/edificio_piedra_gigante.tscn::1d382303b6414bc68ddd498528e79c9e::1782615466::res://.godot/exported/133200997/export-7dd4f130ac1c377434ddac3573cda0c0-edificio_piedra_gigante.scn
@@ -30,5 +30,5 @@ res://escenas/world/foreground.tscn::f02dde98505f47fc07d4126b878989c0::178182927
 res://escenas/world/lluvia.tscn::ffa5488020d80f7cebde895591b6e9f0::1782625492::res://.godot/exported/133200997/export-09e64f55d9c3155a06e7ff7f793bd2d1-lluvia.scn
 res://escenas/world/main.tscn::3eb705b6ab4700fa39aa7b99c610bdb7::1782625530::res://.godot/exported/133200997/export-9340532e442b707c691d2faf41ba354f-main.scn
 res://escenas/world/world_grid.tscn::b3a0f026dece46a9f4483722d7b5d7cd::1781829275::res://.godot/exported/133200997/export-0fe684bc2831554c17781a71b1f30097-world_grid.scn
-res://escenas/main.tscn::dfe2c5a43d151c07546b1d61751ef903::1782862933::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
-res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782858993::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
+res://escenas/main.tscn::be05e8f762caf6d7b8c1336636a71999::1782881476::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
+res://recursos/ui_principal.tres::1684b5ef7e64d46daba44a7fb68158b3::1782879826::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
