@@ -1,9 +1,2 @@
-res://escenas/world/singleton/single_info.tscn
-res://recursos/ui_principal.tres
-res://scripts/world/single_info/single_info.gd
-res://scripts/world/single_info/world_info.gd
 res://escenas/main.tscn
-res://scripts/camara/camera_world.gd
-res://scripts/world/single_info/build_info.gd
-res://escenas/world/camera_world.tscn
-res://escenas/world/background.tscn
+res://recursos/ui_principal.tres
