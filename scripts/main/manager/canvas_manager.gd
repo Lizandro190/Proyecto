@@ -7,4 +7,11 @@ class_name CanvasManager extends Node
 @onready var canvas_edificios: CanvasLayer = $CanvasEdificios
 @onready var canvas_character_info_complete: CanvasLayer = $CanvasCharacterInfoComplete
 
-@onready var grid_preview: Node2D = $GridPreview
+@onready var grid_preview: Node = $CanvasGridPreview
+
+func _ready() -> void:
+	SingleInfo.events.toggle_mode_construction.connect(_make_visible_grid_construccion)
+
+func _make_visible_grid_construccion():
+	grid_preview.grid._toggle_visible()
+	

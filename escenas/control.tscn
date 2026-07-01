@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cio4leos30qc8"]
+
+[ext_resource type="Script" uid="uid://ygv6tu1va2e7" path="res://scripts/UI/pantalla_inicio/control.gd" id="1_6m6ia"]
+[ext_resource type="Theme" uid="uid://pc4bbtxpc0xj" path="res://recursos/ui_principal.tres" id="1_ffvlt"]
+
+[node name="Control" type="Control" unique_id=1958265752]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 300.0
+script = ExtResource("1_6m6ia")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=392049184]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 300.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=434221046]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 86.0
+offset_right = 286.0
+offset_bottom = 105.0
+theme = ExtResource("1_ffvlt")
+bbcode_enabled = true
+text = "[shake]Clamster Void Studio Presenta[/shake]"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=2079861962]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 112.0
+offset_right = 258.0
+offset_bottom = 147.0
+theme = ExtResource("1_ffvlt")
+theme_override_font_sizes/normal_font_size = 26
+bbcode_enabled = true
+text = "[shake]Nahomiss World[/shake]"
+scroll_active = false
+
+[node name="FondoNegro" type="ColorRect" parent="." unique_id=207937850]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 300.0
+color = Color(0, 0, 0, 1)

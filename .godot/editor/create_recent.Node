@@ -1,7 +1,10 @@
-VBoxContainer
+ColorRect
+RichTextLabel
 AspectRatioContainer
-Container
 Label
+Control
+VBoxContainer
+Container
 HBoxContainer
 CollisionShape2D
 Area2D
