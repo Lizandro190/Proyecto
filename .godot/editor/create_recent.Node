@@ -1,2 +1,8 @@
+VBoxContainer
+AspectRatioContainer
+Container
 Label
+HBoxContainer
+CollisionShape2D
+Area2D
 Node

@@ -126,19 +126,19 @@ frame_progress = 0.20219664
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_u2262")
 
-[node name="EdificioActual" type="Area2D" parent="." unique_id=327684042]
+[node name="InteractBuild" type="Area2D" parent="." unique_id=327684042]
 collision_layer = 4
 collision_mask = 4
 script = ExtResource("4_ti7n8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EdificioActual" unique_id=1823744683]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractBuild" unique_id=1823744683]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_8swwi")
 
-[node name="ColonoSeleccion" type="Area2D" parent="." unique_id=105828970]
+[node name="AreaSelection" type="Area2D" parent="." unique_id=105828970]
 script = ExtResource("5_oghae")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ColonoSeleccion" unique_id=594352917]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaSelection" unique_id=594352917]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_p3k8e")
 
@@ -186,6 +186,6 @@ script = ExtResource("20_b75nq")
 [node name="Personality" type="Node" parent="Personality" unique_id=1428987395]
 script = ExtResource("21_qc2ho")
 
-[connection signal="area_entered" from="EdificioActual" to="EdificioActual" method="_on_area_entered"]
-[connection signal="area_exited" from="EdificioActual" to="EdificioActual" method="_on_area_exited"]
-[connection signal="input_event" from="ColonoSeleccion" to="ColonoSeleccion" method="_on_input_event"]
+[connection signal="area_entered" from="InteractBuild" to="InteractBuild" method="_on_area_entered"]
+[connection signal="area_exited" from="InteractBuild" to="InteractBuild" method="_on_area_exited"]
+[connection signal="input_event" from="AreaSelection" to="AreaSelection" method="_on_input_event"]
