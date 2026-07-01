@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8t8k4w4lvofi"]
+
+[ext_resource type="PackedScene" uid="uid://c2tgq3gmdovja" path="res://escenas/edificios/producion/edificio_producion.tscn" id="1_j0g5f"]
+[ext_resource type="Texture2D" uid="uid://4edgmk6pldck" path="res://sprites/edificios/producion/sprite_mina.png" id="2_3jyxy"]
+
+[node name="EdificioProducion" unique_id=1820453355 instance=ExtResource("1_j0g5f")]
+
+[node name="Sprite2D" parent="AreaInteraccion" parent_id_path=PackedInt32Array(652046842) index="0" unique_id=105823674]
+texture = ExtResource("2_3jyxy")
