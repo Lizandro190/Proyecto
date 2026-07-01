@@ -113,8 +113,8 @@ position = Vector2(216, 440)
 position = Vector2(216, 424)
 
 [node name="Label" type="Label" parent="." unique_id=1136137344]
-offset_left = 290.0
-offset_top = 375.0
-offset_right = 330.0
-offset_bottom = 398.0
+offset_left = 526.0
+offset_top = 378.0
+offset_right = 598.0
+offset_bottom = 401.0
 text = "Version 2"
