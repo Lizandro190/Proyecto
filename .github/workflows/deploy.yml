@@ -1,0 +1,29 @@
+name: Deploy to itch.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Butler
+        run: |
+          curl -L -o butler.zip https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default
+          unzip butler.zip
+          chmod +x butler
+          sudo mv butler /usr/local/bin/
+
+      - name: Push to itch.io
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ITCH_USER: ${{ secrets.ITCH_USER }}
+          ITCH_GAME: ${{ secrets.ITCH_GAME }}
+        run: |
+          butler push html "$ITCH_USER/$ITCH_GAME:html"
