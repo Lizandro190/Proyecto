@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://k373wxvn0y8c"]
+
+[ext_resource type="PackedScene" uid="uid://dq8yrswmqscx" path="res://escenas/builds/build.tscn" id="1_f7egb"]
+[ext_resource type="Script" uid="uid://cety0q3eisp8p" path="res://scripts/builds/stone_build.gd" id="2_mposf"]
+[ext_resource type="Texture2D" uid="uid://4edgmk6pldck" path="res://sprites/edificios/producion/sprite_mina.png" id="3_k8a22"]
+
+[node name="StoneBuild" unique_id=2092196536 instance=ExtResource("1_f7egb")]
+script = ExtResource("2_mposf")
+
+[node name="Sprite2D" parent="." index="0" unique_id=1546935686]
+texture = ExtResource("3_k8a22")

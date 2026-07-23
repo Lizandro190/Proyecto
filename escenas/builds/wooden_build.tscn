@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ba46mhna4c826"]
+
+[ext_resource type="PackedScene" uid="uid://cbfrn7e4we86j" path="res://escenas/builds/production_build.tscn" id="1_d88x5"]
+[ext_resource type="Script" uid="uid://cmrklnks1fwvh" path="res://scripts/builds/wooden_build.gd" id="2_abmu0"]
+[ext_resource type="Texture2D" uid="uid://csf3lar1647oh" path="res://sprites/edificios/producion/sprite_edificio_madera.png" id="3_oirk1"]
+
+[node name="WoodenBuild" unique_id=2092196536 instance=ExtResource("1_d88x5")]
+script = ExtResource("2_abmu0")
+
+[node name="Sprite2D" parent="." index="0" unique_id=1546935686]
+texture = ExtResource("3_oirk1")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dq8yrswmqscx"]
+
+[ext_resource type="Script" uid="uid://bqurwn1trto2j" path="res://scripts/edificio/build.gd" id="1_3lvh1"]
+[ext_resource type="Texture2D" uid="uid://dgx10qt68lefn" path="res://sprites/edificios/sprite_edificio_default.png" id="1_h60wf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lvh1"]
+size = Vector2(16, 16)
+
+[node name="Area2D" type="Area2D" unique_id=349865915]
+collision_layer = 8
+collision_mask = 4
+script = ExtResource("1_3lvh1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1546935686]
+texture = ExtResource("1_h60wf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709012620]
+shape = SubResource("RectangleShape2D_3lvh1")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

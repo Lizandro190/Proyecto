@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cbfrn7e4we86j"]
+
+[ext_resource type="PackedScene" uid="uid://dq8yrswmqscx" path="res://escenas/builds/build.tscn" id="1_7sbgp"]
+[ext_resource type="Script" uid="uid://bbwmuixofh8ef" path="res://scripts/builds/production_build.gd" id="2_q7uwn"]
+
+[node name="ProductionBuild" unique_id=2092196536 instance=ExtResource("1_7sbgp")]
+script = ExtResource("2_q7uwn")

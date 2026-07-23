@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dfabekergmp2q"]
+
+[ext_resource type="Script" uid="uid://bbixrbyphuicn" path="res://scripts/character/character.gd" id="1_bhq7q"]
+[ext_resource type="Texture2D" uid="uid://bqwgwnuo66hy1" path="res://sprites/iconos/view_hitbox.png" id="2_bhq7q"]
+[ext_resource type="Script" uid="uid://cqrxvxo753sxf" path="res://escenas/characters/area_selectionable.gd" id="3_bhq7q"]
+[ext_resource type="Script" uid="uid://cyuikt2hd8c8y" path="res://scripts/character/area_interaction_build.gd" id="3_dnmq3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ywt20"]
+animations = []
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnmq3"]
+atlas = ExtResource("2_bhq7q")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar5sc"]
+atlas = ExtResource("2_bhq7q")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i3ppr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnmq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ar5sc")
+}],
+"loop": 1,
+"name": &"hitbox",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbnmk"]
+size = Vector2(8, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fhlk0"]
+size = Vector2(2, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pew07"]
+size = Vector2(6, 12)
+
+[node name="Character" type="CharacterBody2D" unique_id=2036808363]
+collision_layer = 0
+script = ExtResource("1_bhq7q")
+
+[node name="MovementAnimation" type="AnimatedSprite2D" parent="." unique_id=1210485740]
+sprite_frames = SubResource("SpriteFrames_ywt20")
+animation = &""
+
+[node name="HitboxAnimation" type="AnimatedSprite2D" parent="." unique_id=344992587]
+visible = false
+position = Vector2(0, 1)
+scale = Vector2(1, 0.75)
+sprite_frames = SubResource("SpriteFrames_i3ppr")
+animation = &"hitbox"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=992988759]
+
+[node name="RigidCollision" type="CollisionShape2D" parent="." unique_id=2108118500]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_hbnmk")
+
+[node name="AreaInteractionBuilder" type="Area2D" parent="." unique_id=1799206524]
+collision_layer = 0
+collision_mask = 4
+input_pickable = false
+script = ExtResource("3_dnmq3")
+
+[node name="CollisionInteractionBuilder" type="CollisionShape2D" parent="AreaInteractionBuilder" unique_id=15125957]
+shape = SubResource("RectangleShape2D_fhlk0")
+
+[node name="AreaSelectionable" type="Area2D" parent="." unique_id=188557146]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("3_bhq7q")
+
+[node name="CollisionSelectionable" type="CollisionShape2D" parent="AreaSelectionable" unique_id=140974971]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_pew07")
+
+[connection signal="input_event" from="AreaSelectionable" to="AreaSelectionable" method="_on_input_event"]

@@ -6,9 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bokh7uj8tjtco" path="res://escenas/world/production/game_manager.tscn" id="3_ueiap"]
 [ext_resource type="Script" uid="uid://cl4sqy68eic6j" path="res://scripts/main/manager/canvas_manager.gd" id="4_a5wrc"]
 [ext_resource type="PackedScene" uid="uid://xx60ssannu10" path="res://escenas/UI/character/canvas_character_info.tscn" id="5_a5wrc"]
-[ext_resource type="PackedScene" uid="uid://c46i2syjfjohp" path="res://escenas/edificios/producion/edificio_madera.tscn" id="5_lyxkq"]
 [ext_resource type="PackedScene" uid="uid://s5pu6jcblnud" path="res://escenas/UI/character/canvas_character_info_completed.tscn" id="7_ymkly"]
-[ext_resource type="PackedScene" uid="uid://cxd6tg7ojlehn" path="res://escenas/edificios/producion/edificio_hospital.tscn" id="9_dg7ii"]
 [ext_resource type="PackedScene" uid="uid://ccgbp7mje16is" path="res://escenas/UI/construccion/canvas_construction.tscn" id="11_acisx"]
 [ext_resource type="PackedScene" uid="uid://dnuiodt42icuo" path="res://escenas/UI/time/canvas_time.tscn" id="12_jwie6"]
 [ext_resource type="PackedScene" uid="uid://dxywk6t56y7d5" path="res://escenas/world/camera_world.tscn" id="13_a5wrc"]
@@ -16,7 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://cv81kamwkvdx" path="res://escenas/UI/construccion/canvas_grid_preview.tscn" id="13_r01y2"]
 [ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/produccion/canvas_production.tscn" id="13_ueiap"]
 [ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/construccion/canvas_edificio.tscn" id="14_a5wrc"]
-[ext_resource type="PackedScene" uid="uid://8t8k4w4lvofi" path="res://escenas/edificios/producion/edificio_piedra.tscn" id="16_ymkly"]
+[ext_resource type="PackedScene" uid="uid://k373wxvn0y8c" path="res://escenas/builds/stone_build.tscn" id="15_ueiap"]
+[ext_resource type="PackedScene" uid="uid://ba46mhna4c826" path="res://escenas/builds/wooden_build.tscn" id="16_ymkly"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jumxm"]
 texture = ExtResource("2_0kxa1")
@@ -78,7 +77,7 @@ position = Vector2(323, 410)
 
 [node name="GameManager" parent="." unique_id=8480423 instance=ExtResource("3_ueiap")]
 
-[node name="ColonyManager" type="Node" parent="GameManager" unique_id=118493793]
+[node name="CharactersManager" type="Node" parent="GameManager" unique_id=118493793]
 script = ExtResource("13_acisx")
 
 [node name="CanvasManager" type="Node" parent="." unique_id=1162879498]
@@ -110,11 +109,8 @@ position = Vector2(480, 272)
 tile_map_data = PackedByteArray("AADi/wsAAAAEAAMAAADi/wwAAAAEAAQAAAAJAAwAAAAFAAQAAAAIAAwAAAAFAAQAAAAHAAwAAAAFAAQAAAAGAAwAAAAFAAQAAAAFAAwAAAAFAAQAAAAEAAwAAAAFAAQAAAADAAwAAAAFAAQAAAACAAwAAAAFAAQAAAABAAwAAAAFAAQAAAAAAAwAAAAFAAQAAAD//wwAAAAFAAQAAAD+/wwAAAAFAAQAAAD9/wwAAAAFAAQAAAD8/wwAAAAFAAQAAAD7/wwAAAAFAAQAAAD6/wwAAAAFAAQAAAD5/wwAAAAFAAQAAAD4/wwAAAAFAAQAAAD3/wwAAAAFAAQAAAD2/wwAAAAFAAQAAAD1/wwAAAAFAAQAAAD0/wwAAAAFAAQAAADz/wwAAAAFAAQAAADy/wwAAAAFAAQAAADx/wwAAAAFAAQAAADw/wwAAAAFAAQAAADv/wwAAAAFAAQAAADu/wwAAAAFAAQAAADt/wwAAAAFAAQAAADs/wwAAAAFAAQAAADr/wwAAAAFAAQAAADq/wwAAAAFAAQAAADp/wwAAAAFAAQAAADo/wwAAAAFAAQAAADn/wwAAAAFAAQAAADm/wwAAAAFAAQAAADl/wwAAAAFAAQAAADk/wwAAAAFAAQAAADj/wwAAAAFAAQAAAAJAAsAAAAFAAMAAAAIAAsAAAAFAAMAAAAHAAsAAAAFAAMAAAAGAAsAAAAFAAMAAAAFAAsAAAAFAAMAAAAEAAsAAAAFAAMAAAADAAsAAAAFAAMAAAACAAsAAAAFAAMAAAABAAsAAAAFAAMAAAAAAAsAAAAFAAMAAAD//wsAAAAFAAMAAAD+/wsAAAAFAAMAAAD9/wsAAAAFAAMAAAD8/wsAAAAFAAMAAAD7/wsAAAAFAAMAAAD6/wsAAAAFAAMAAAD5/wsAAAAFAAMAAAD4/wsAAAAFAAMAAAD3/wsAAAAFAAMAAAD2/wsAAAAFAAMAAAD1/wsAAAAFAAMAAAD0/wsAAAAFAAMAAADz/wsAAAAFAAMAAADy/wsAAAAFAAMAAADx/wsAAAAFAAMAAADw/wsAAAAFAAMAAADv/wsAAAAFAAMAAADu/wsAAAAFAAMAAADt/wsAAAAFAAMAAADs/wsAAAAFAAMAAADr/wsAAAAFAAMAAADq/wsAAAAFAAMAAADp/wsAAAAFAAMAAADo/wsAAAAFAAMAAADn/wsAAAAFAAMAAADm/wsAAAAFAAMAAADl/wsAAAAFAAMAAADk/wsAAAAFAAMAAADj/wsAAAAFAAMAAAAKAAsAAAAGAAMAAAAKAAwAAAAGAAQAAAA=")
 tile_set = SubResource("TileSet_26pgj")
 
-[node name="EdificioArea2" parent="." unique_id=1625324867 instance=ExtResource("5_lyxkq")]
-position = Vector2(216, 440)
+[node name="StoneBuild" parent="." unique_id=2092196536 instance=ExtResource("15_ueiap")]
+position = Vector2(312, 440)
 
-[node name="EdificioProducion" parent="." unique_id=1820453355 instance=ExtResource("9_dg7ii")]
-position = Vector2(216, 424)
-
-[node name="EdificioProducion2" parent="." unique_id=1795427471 instance=ExtResource("16_ymkly")]
-position = Vector2(264, 440)
+[node name="WoodenBuild" parent="." unique_id=288276698 instance=ExtResource("16_ymkly")]
+position = Vector2(312, 424)

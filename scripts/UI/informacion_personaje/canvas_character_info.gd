@@ -10,33 +10,34 @@ class_name CanvasCharacterInfo extends CanvasLayer
 @onready var control_container : HBoxContainer = $PanelContainer/MarginContainer/VBoxContainer/BotonContainer
 
 func _ready() -> void:
-	SingleInfo.events.colono_selected.connect(show_character_information)
-	SingleInfo.events.toggle_control_colono.connect(update_mode_control)
+	SingleInfo.events.character_selected.connect(show_canvas_information)
+	SingleInfo.events.toggle_control_character.connect(update_mode_control)
 	
 	visible = false
 
-func show_character_information():
-	if SingleInfo.player_global.is_character_selected():
+func show_canvas_information():
+	if SingleInfo.character_global.is_character_selected():
 		visible = true
-		update_character_information()
+		if SingleInfo.character_global.character_selected is Colony:
+			update_character_information()
 	else:
 		visible = false
 	
 func update_character_information():
-	var character = SingleInfo.player_global.character_selected.player_info
+	var character = SingleInfo.character_global.character_selected
 	
-	nombre.text = character.nombre
-	cansancio.text = str(character.fatiga)
-	felicidad.text = str(character.felicidad)
-	amor.text = str(character.amor)
+	nombre.text = character.personal_information.nombre
+	cansancio.text = str(character.physic_information.cansancio)
+	felicidad.text = str(character.emotional_information.felicidad)
+	amor.text = str(character.emotional_information.amor)
 	
 	update_mode_control()
 	
 func update_mode_control() -> void:
-	if SingleInfo.player_global.is_character_selected():
-		var character = SingleInfo.player_global.character_selected
+	if SingleInfo.character_global.is_character_selected():
+		var character = SingleInfo.character_global.character_selected
 		
-		if character.is_managed_by_ia():
+		if character.current_controller.is_managin_by_ia():
 			control.text = "Controlar"
 		else:
 			control.text = "Descontrolar"

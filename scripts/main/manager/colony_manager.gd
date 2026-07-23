@@ -1,20 +1,20 @@
-class_name ColonyManager extends Node
+class_name CharactersManager extends Node
 
-var colonos: Array[PersonajePadre] = []
+var characters: Array[Character] = []
 
-var colono_scene = preload("res://escenas/personajes/personaje_colono.tscn")
+var colony_scene = preload("res://escenas/characters/Colony.tscn")
 
 func _ready() -> void:
-	SingleInfo.tick_global.tick_completo.connect(_update_colonos)
+	SingleInfo.tick_global.tick_completo.connect(_update_characters)
 
-func crear_colono(posicion: Vector2):
-	var colono = colono_scene.instantiate()
+func make_colony(posicion: Vector2):
+	var colony = colony_scene.instantiate()
 
-	colono.position = posicion
-	add_child(colono)
+	colony.position = posicion
+	add_child(colony)
 	
-	colonos.append(colono)
+	characters.append(colony)
 
-func _update_colonos() -> void:
-	for colono in colonos:
-		colono.interactuar_edificio()
+func _update_characters() -> void:
+	for character in characters:
+		character.interact_with_build()

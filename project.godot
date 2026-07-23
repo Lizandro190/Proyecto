@@ -79,8 +79,8 @@ ui_e={
 [layer_names]
 
 2d_physics/layer_1="solid_object"
-2d_physics/layer_2="hitbox_player"
-2d_physics/layer_3="edificio_area"
+2d_physics/layer_2="character_area_selectionable"
+2d_physics/layer_3="build"
 
 [physics]
 

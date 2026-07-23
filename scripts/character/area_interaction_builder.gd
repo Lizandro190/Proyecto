@@ -1,0 +1,1 @@
+class_name AreaInteractionBuilder extends Area2D

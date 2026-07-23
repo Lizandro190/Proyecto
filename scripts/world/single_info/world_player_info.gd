@@ -1,8 +1,8 @@
-class_name PlayerGlobal extends Node
+class_name CharacterGlobal extends Node
 
-var character_selected: PersonajePadre = null
+var character_selected: Character = null
 
-func asignar_personaje(character: PersonajePadre) -> void:
+func select_character(character: Character) -> void:
 	if character == character_selected:
 		character_selected.deseleccionar()
 		character_selected = null
@@ -18,8 +18,5 @@ func is_character_selected() -> bool:
 	return character_selected != null
 
 func toggle_control() -> void:
-	if character_selected:
-		if character_selected.is_managed_by_ia():
-			character_selected.active_controller = character_selected.user_controller
-		else:
-			character_selected.active_controller = character_selected.ai_controller
+	if is_character_selected():
+		character_selected.toogle_control()

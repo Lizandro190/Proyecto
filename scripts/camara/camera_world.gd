@@ -14,10 +14,10 @@ func _ready() -> void:
 	limite_down = 475.0
 
 func _process(delta):
-	if !SingleInfo.player_global.is_character_selected():
+	if !SingleInfo.character_global.is_character_selected():
 		mover_camara(delta)
 	else: 
-		global_position = SingleInfo.player_global.character_selected.global_position
+		global_position = SingleInfo.character_global.character_selected.global_position
 				
 func mover_camara(delta):
 	var direccion := Vector2.ZERO

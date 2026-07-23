@@ -183,7 +183,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"lluvia",
-"speed": 17.0
+"speed": 50.0
 }]
 
 [node name="Node2D" type="Node2D" unique_id=910412670]
@@ -193,11 +193,10 @@ script = ExtResource("1_yos5b")
 position = Vector2(44, 366)
 sprite_frames = SubResource("SpriteFrames_jwtir")
 animation = &"lluvia"
-frame = 2
-frame_progress = 0.36548078
+frame_progress = 0.39543065
 
 [node name="Dos" type="AnimatedSprite2D" parent="." unique_id=82101454]
 position = Vector2(418, 365)
 sprite_frames = SubResource("SpriteFrames_jwtir")
 animation = &"lluvia"
-frame_progress = 0.1774612
+frame_progress = 0.5429924

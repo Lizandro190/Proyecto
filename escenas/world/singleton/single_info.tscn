@@ -14,7 +14,7 @@
 [node name="SingletonInfo" type="Node2D" unique_id=2056781733]
 script = ExtResource("1_2anac")
 
-[node name="PlayerGlobal" type="Node" parent="." unique_id=1139551471]
+[node name="CharacterGlobal" type="Node" parent="." unique_id=1139551471]
 script = ExtResource("2_gy2d8")
 
 [node name="HorarioGlobal" type="Node" parent="." unique_id=1816801459]
