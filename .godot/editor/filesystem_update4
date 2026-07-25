@@ -1,2 +1,4 @@
 res://escenas/main.tscn
 res://recursos/ui_principal.tres
+res://scripts/main/main.gd
+res://scripts/world/single_info/metodos_universales.gd
