@@ -15,9 +15,9 @@ offset_right = 46.0
 offset_bottom = 25.0
 
 [node name="MarginContainer" parent="PanelContainer" index="0" unique_id=2048456077]
-theme_override_constants/margin_left = 1
-theme_override_constants/margin_top = 1
-theme_override_constants/margin_right = 1
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 2
 
 [node name="GridContainer" parent="PanelContainer/MarginContainer" index="0" unique_id=151003867]
 theme_override_constants/v_separation = -1
@@ -31,6 +31,6 @@ script = ExtResource("3_feooy")
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/GridContainer" index="1" unique_id=1265164293]
 layout_mode = 2
 theme_override_font_sizes/font_size = 6
-text = "construccion"
+text = "Construccion"
 
 [connection signal="gui_input" from="PanelContainer/MarginContainer/GridContainer/TextureRect" to="PanelContainer/MarginContainer/GridContainer/TextureRect" method="_on_gui_input"]

@@ -4,9 +4,9 @@ var occupation: Occupation
 var current_activity: ActivityState
 var builds_asigned: BuildsAsigned
 
-var personal_information: PersonalInformation
+var identity_information: IdentityInformation
 var emotional_information: EmotionalInformation
-var physic_information: PhysicInformation
+var social_information: SocialInformation
 
 func _ready() -> void:
 	## Clases generales de Character
@@ -21,6 +21,7 @@ func _ready() -> void:
 	
 	state_machine = StateMachine.new()
 	
+	physical_information = PhysicalInformation.new()
 	build_ubication = BuildingUbication.new()
 	information = ColonyInformation.new()
 
@@ -29,9 +30,8 @@ func _ready() -> void:
 	current_activity = Leisure.new()
 	builds_asigned = BuildsAsigned.new()
 	
-	personal_information = PersonalInformation.new()
+	identity_information = IdentityInformation.new()
 	emotional_information = EmotionalInformation.new()
-	physic_information = PhysicInformation.new()
 	
 func deseleccionar():
 	super.deseleccionar()

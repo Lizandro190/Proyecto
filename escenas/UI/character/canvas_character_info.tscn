@@ -41,18 +41,18 @@ script = ExtResource("2_g06e0")
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -100.0
+offset_left = -102.0
 offset_top = 41.0
 offset_right = -2.0
-offset_bottom = 55.0
+offset_bottom = 52.0
 grow_horizontal = 0
 script = ExtResource("3_g06e0")
 
 [node name="MarginContainer" parent="PanelContainer" index="0" unique_id=785842594]
 theme_override_constants/margin_left = 2
-theme_override_constants/margin_top = 1
+theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 2
-theme_override_constants/margin_bottom = 2
+theme_override_constants/margin_bottom = 0
 
 [node name="VBoxContainer" parent="PanelContainer/MarginContainer" index="0" unique_id=763291066]
 theme_override_constants/separation = 1

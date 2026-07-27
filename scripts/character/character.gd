@@ -17,6 +17,7 @@ var need_resolver: NeedResolver
 
 var state_machine: StateMachine
 
+var physical_information: PhysicalInformation
 var build_ubication: BuildingUbication
 var information: Information
 
@@ -32,9 +33,9 @@ func _physics_process(delta: float):
 	move_and_slide()
 	
 func seleccionar():
-	hitbox_animation.visible = true
-	hitbox_animation.play("hitbox")
-	camara.enabled = true
+		hitbox_animation.visible = true
+		hitbox_animation.play("hitbox")
+		camara.enabled = true
 
 func deseleccionar():
 	hitbox_animation.visible = false

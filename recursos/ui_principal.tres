@@ -1,14 +1,14 @@
 [gd_resource type="Theme" format=3 uid="uid://pc4bbtxpc0xj"]
 
 [ext_resource type="FontFile" uid="uid://c7s47ptcr5fm0" path="res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf" id="1_m1d2w"]
-[ext_resource type="Texture2D" uid="uid://by72humipcl11" path="res://sprites/panel/panel.png" id="2_m1d2w"]
+[ext_resource type="Texture2D" uid="uid://ch67dtkhi6wkx" path="res://sprites/panel/panel_dos.png" id="2_m1d2w"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p7ody"]
 texture = ExtResource("2_m1d2w")
-texture_margin_left = 1.0
-texture_margin_top = 1.0
-texture_margin_right = 1.0
-texture_margin_bottom = 1.0
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
 
 [resource]
 default_font = ExtResource("1_m1d2w")

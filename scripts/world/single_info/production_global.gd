@@ -1,5 +1,6 @@
 class_name ProductionGlobal extends Node
 
-var numero_madera := 0
-var numero_piedra := 0
-var numero_conocimiento := 0
+var wood := 0
+var rock := 0
+var food := 0
+var knowledge := 0

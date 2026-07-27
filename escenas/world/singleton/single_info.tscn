@@ -29,7 +29,7 @@ script = ExtResource("5_mdcpr")
 [node name="ProductionGlobal" type="Node" parent="." unique_id=362580341]
 script = ExtResource("6_gy2d8")
 
-[node name="WorldState" type="Node" parent="." unique_id=41907428]
+[node name="ConstructionGlobal" type="Node" parent="." unique_id=41907428]
 script = ExtResource("7_p42a5")
 
 [node name="Events" type="Node" parent="." unique_id=1826824867]

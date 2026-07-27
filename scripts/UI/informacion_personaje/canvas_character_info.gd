@@ -26,8 +26,8 @@ func show_canvas_information():
 func update_character_information():
 	var character = SingleInfo.character_global.character_selected
 	
-	nombre.text = character.personal_information.nombre
-	cansancio.text = str(character.physic_information.cansancio)
+	nombre.text = character.identity_information.nombre
+	cansancio.text = str(character.physical_information.sleep)
 	felicidad.text = str(character.emotional_information.felicidad)
 	amor.text = str(character.emotional_information.amor)
 	
@@ -36,7 +36,6 @@ func update_character_information():
 func update_mode_control() -> void:
 	if SingleInfo.character_global.is_character_selected():
 		var character = SingleInfo.character_global.character_selected
-		
 		if character.current_controller.is_managin_by_ia():
 			control.text = "Controlar"
 		else:

@@ -1,4 +1,4 @@
-class_name PersonalInformation extends RefCounted
+class_name IdentityInformation extends RefCounted
 
 var nombre: String
 var apellido: String

@@ -1,2 +1,3 @@
-res://escenas/main.tscn
+res://escenas/UI/construccion/canvas_construction_better.tscn
 res://recursos/ui_principal.tres
+res://escenas/UI/construccion/desglose.gd

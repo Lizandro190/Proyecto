@@ -14,5 +14,5 @@ func _on_gui_input(event: InputEvent) -> void:
 			var piedra_box = grid.get_node("PiedraBox")
 			piedra_box.visible = !piedra_box.visible
 			
-			var conocimiento_box = grid.get_node("ConocimientoBox")
-			conocimiento_box.visible = !conocimiento_box.visible
+			var comida_box = grid.get_node("ComidaBox")
+			comida_box.visible = !comida_box.visible
