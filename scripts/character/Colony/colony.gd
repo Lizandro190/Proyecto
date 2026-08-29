@@ -23,7 +23,7 @@ func _ready() -> void:
 	
 	physical_information = PhysicalInformation.new()
 	build_ubication = BuildingUbication.new()
-	information = ColonyInformation.new()
+	data = ColonyData.new()
 
 	## Clases unicas de Colony
 	occupation = Miner.new()

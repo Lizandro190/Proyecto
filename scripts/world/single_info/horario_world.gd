@@ -1,4 +1,4 @@
-class_name HorarioGlobal extends Node
+class_name Horario extends Node
 
 var duracion_minuto := 2.5
 

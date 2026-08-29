@@ -19,7 +19,7 @@ var state_machine: StateMachine
 
 var physical_information: PhysicalInformation
 var build_ubication: BuildingUbication
-var information: Information
+var data: CharacterData
 
 func _physics_process(delta: float):
 	physics.apply_physic(self, delta)

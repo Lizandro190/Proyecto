@@ -1,4 +1,4 @@
-extends CanvasLayer
+class_name CanvasCharacterDescription extends CanvasLayer
 
 @onready var nombre_completo : Label = $PanelContainer/MarginContainer/VBoxContainer/BoxNombreCompleto/NombreBox/NombreCompleto
 

@@ -17,7 +17,7 @@ script = ExtResource("1_2anac")
 [node name="CharacterGlobal" type="Node" parent="." unique_id=1139551471]
 script = ExtResource("2_gy2d8")
 
-[node name="HorarioGlobal" type="Node" parent="." unique_id=1816801459]
+[node name="Horario" type="Node" parent="." unique_id=1816801459]
 script = ExtResource("3_p42a5")
 
 [node name="WeatherGlobal" type="Node" parent="." unique_id=600872962]

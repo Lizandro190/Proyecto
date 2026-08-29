@@ -1,0 +1,8 @@
+[gd_resource type="Theme" format=3 uid="uid://bbu7ripxaa41u"]
+
+[ext_resource type="FontFile" uid="uid://c7s47ptcr5fm0" path="res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf" id="1_cghcd"]
+
+[resource]
+default_font = ExtResource("1_cghcd")
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_cghcd")

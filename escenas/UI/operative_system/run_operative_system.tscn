@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://t8fsxu8snqmu"]
+
+[ext_resource type="Texture2D" uid="uid://colmpw0yvcnd0" path="res://sprites/tilemaps/fondo/fondo_negro.png" id="1_iv54l"]
+[ext_resource type="Script" uid="uid://dv3k0amf8ircv" path="res://scripts/UI/sistema_operativo/run_operative_system.gd" id="1_li1u4"]
+[ext_resource type="FontFile" uid="uid://c7s47ptcr5fm0" path="res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf" id="2_1lwt6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font = ExtResource("2_1lwt6")
+font_size = 7
+
+[node name="RunOperativeSystem" type="Node2D" unique_id=106579656]
+script = ExtResource("1_li1u4")
+
+[node name="FondoNegro" type="Sprite2D" parent="." unique_id=1972860738]
+position = Vector2(187.37503, 123.56251)
+scale = Vector2(23.453125, 15.679687)
+texture = ExtResource("1_iv54l")
+
+[node name="Label" type="Label" parent="." unique_id=422923312]
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 100.0
+offset_bottom = 25.0
+text = "Hola esta es una prueba"
+label_settings = SubResource("LabelSettings_yf5fn")

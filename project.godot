@@ -15,7 +15,7 @@ general/updates_per_second=30
 [application]
 
 config/name="IntentoDos (4.6)"
-run/main_scene="uid://uf47tt4y2fl5"
+run/main_scene="uid://t8fsxu8snqmu"
 config/features=PackedStringArray("4.7", "Mobile")
 
 [autoload]

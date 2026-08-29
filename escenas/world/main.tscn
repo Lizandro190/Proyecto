@@ -5,16 +5,17 @@
 [ext_resource type="Script" uid="uid://bs2g5nnc3jxmt" path="res://scripts/main/manager/game_manager.gd" id="2_faq4e"]
 [ext_resource type="Script" uid="uid://c4tcqcnaxec4j" path="res://scripts/main/manager/colony_manager.gd" id="3_faq4e"]
 [ext_resource type="Script" uid="uid://cl4sqy68eic6j" path="res://scripts/main/manager/canvas_manager.gd" id="4_xfq7y"]
-[ext_resource type="PackedScene" uid="uid://xx60ssannu10" path="res://escenas/UI/character/canvas_character_info.tscn" id="6_3oncl"]
+[ext_resource type="PackedScene" uid="uid://xx60ssannu10" path="res://escenas/UI/character/canvas_character.tscn" id="6_3oncl"]
 [ext_resource type="PackedScene" uid="uid://nic4jgnwwe4e" path="res://escenas/UI/produccion/canvas_production.tscn" id="6_72q4p"]
-[ext_resource type="PackedScene" uid="uid://ccgbp7mje16is" path="res://escenas/UI/construccion/canvas_construction.tscn" id="7_oi8pt"]
+[ext_resource type="PackedScene" path="res://escenas/UI/construccion/canvas_construction.tscn" id="7_oi8pt"]
 [ext_resource type="PackedScene" uid="uid://wsf0ek66x0rs" path="res://escenas/UI/construccion/canvas_edificio.tscn" id="8_fg2v4"]
-[ext_resource type="PackedScene" uid="uid://d4bqvadwjt6tp" path="res://escenas/UI/time/canvas_time_info.tscn" id="9_ogx8h"]
+[ext_resource type="PackedScene" path="res://escenas/UI/time/canvas_time_info.tscn" id="9_ogx8h"]
 [ext_resource type="PackedScene" uid="uid://bl48xjm5vm7ix" path="res://escenas/world/background.tscn" id="10_4gn6w"]
 [ext_resource type="Texture2D" uid="uid://414aovpq2rse" path="res://sprites/tilemaps/spritesJuntos.png" id="11_g4sx4"]
 [ext_resource type="PackedScene" uid="uid://c46i2syjfjohp" path="res://escenas/edificios/producion/edificio_madera.tscn" id="12_e2spo"]
-[ext_resource type="PackedScene" uid="uid://curu7rppru73" path="res://escenas/edificios/producion/edificio_hospital.tscn" id="13_25345"]
+[ext_resource type="PackedScene" uid="uid://cxd6tg7ojlehn" path="res://escenas/edificios/producion/edificio_hospital.tscn" id="13_25345"]
 [ext_resource type="PackedScene" path="res://escenas/UI/grid_preview.tscn" id="14_8lmtf"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jumxm"]
 texture = ExtResource("11_g4sx4")

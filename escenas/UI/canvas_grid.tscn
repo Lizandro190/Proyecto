@@ -1,18 +1,13 @@
-[gd_scene format=3 uid="uid://dojs7kpyobyk4"]
+[gd_scene format=3 uid="uid://b1owng551sccx"]
 
-[ext_resource type="Script" uid="uid://d2hhki6pl5oks" path="res://scripts/UI/canvas_padre.gd" id="1_seybe"]
-[ext_resource type="Theme" uid="uid://pc4bbtxpc0xj" path="res://recursos/ui_principal.tres" id="2_bgo8n"]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1403369410]
 
-[node name="CanvasPadre" type="CanvasLayer" unique_id=406368256]
-script = ExtResource("1_seybe")
-
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1131247355]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=872338258]
 offset_right = 40.0
-offset_bottom = 9.0
-theme = ExtResource("2_bgo8n")
+offset_bottom = 40.0
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2048456077]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1175390303]
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer" unique_id=151003867]
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer" unique_id=1505499793]
 layout_mode = 2

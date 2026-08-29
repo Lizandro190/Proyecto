@@ -1,4 +1,4 @@
-class_name ColonyInformation extends Information
+class_name ColonyData extends CharacterData
 
 func _init() -> void:
 	type_character = "Humano"

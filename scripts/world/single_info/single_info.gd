@@ -6,7 +6,7 @@ class_name SingletonInfo extends Node2D
 
 @onready var tick_global : TickGlobal = $TickGlobal
 @onready var character_global: CharacterGlobal = $CharacterGlobal
-@onready var horario_global: HorarioGlobal = $HorarioGlobal
+@onready var horario: Horario = $Horario
 @onready var weather_global: WeatherGlobal = $WeatherGlobal
 @onready var construction_global: ConstructionGlobal = $ConstructionGlobal
 @onready var production_global: ProductionGlobal = $ProductionGlobal

@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://byh2ntikswgw5"]
+
+[ext_resource type="PackedScene" uid="uid://db4mn2nydwwvp" path="res://escenas/UI/canvas_vbox.tscn" id="1_0i2ib"]
+[ext_resource type="Script" uid="uid://cagk4jvkpha7i" path="res://scripts/sistema_operativo/arranque/arranque_sistema_operativo.gd" id="2_jrap5"]
+[ext_resource type="Texture2D" uid="uid://colmpw0yvcnd0" path="res://sprites/tilemaps/fondo/fondo_negro.png" id="3_ilc7a"]
+[ext_resource type="Theme" uid="uid://bbu7ripxaa41u" path="res://recursos/oscuro.tres" id="4_qt852"]
+[ext_resource type="Script" uid="uid://wuur4sbyc5p" path="res://scripts/sistema_operativo/arranque/hexa.gd" id="5_ptdw6"]
+[ext_resource type="Script" uid="uid://bd8tajxvokerx" path="res://scripts/sistema_operativo/arranque/processor_and_memory.gd" id="6_jrap5"]
+[ext_resource type="Script" uid="uid://csofuu4l0qy84" path="res://scripts/sistema_operativo/arranque/info_software.gd" id="7_ilc7a"]
+[ext_resource type="Script" uid="uid://d0e1u0qgqjgun" path="res://scripts/sistema_operativo/arranque/initialize_system_device_2.gd" id="8_qc7hk"]
+[ext_resource type="Script" uid="uid://bqr5yv0fr60uw" path="res://scripts/sistema_operativo/arranque/controllers.gd" id="9_hpies"]
+[ext_resource type="Script" uid="uid://d3au0qrv1b13f" path="res://scripts/sistema_operativo/arranque/boot.gd" id="10_7ctmy"]
+[ext_resource type="AudioStream" uid="uid://4gpgmimiriei" path="res://sonidos/arranque_sistema_operativo/arranque2.mp3" id="11_hpies"]
+
+[sub_resource type="Theme" id="Theme_li1u4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xuycu"]
+texture = ExtResource("3_ilc7a")
+
+[node name="CanvasLayer" unique_id=1891169190 instance=ExtResource("1_0i2ib")]
+script = ExtResource("2_jrap5")
+
+[node name="PanelContainer" parent="." index="0" unique_id=1228616084]
+offset_right = 432.0
+offset_bottom = 319.0
+theme = SubResource("Theme_li1u4")
+theme_override_styles/panel = SubResource("StyleBoxTexture_xuycu")
+
+[node name="MarginContainer" parent="PanelContainer" index="0" unique_id=785842594]
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" parent="PanelContainer/MarginContainer" index="0" unique_id=763291066]
+theme = ExtResource("4_qt852")
+theme_override_constants/separation = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" index="0" unique_id=1797398102]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer" index="0" unique_id=1017433371]
+layout_mode = 2
+theme_override_constants/separation = -2
+
+[node name="hexa" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="0" unique_id=670761588]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("5_ptdw6")
+
+[node name="Hexa" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/hexa" index="0" unique_id=52053640]
+layout_mode = 2
+text = "# HX / ROM - 0316"
+
+[node name="Space1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/hexa" index="1" unique_id=879658675]
+layout_mode = 2
+
+[node name="ProcessorAndMemory" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="1" unique_id=2020833941]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("6_jrap5")
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/ProcessorAndMemory" index="0" unique_id=799826478]
+layout_mode = 2
+text = "ARC - 9 Processor at 66MHz"
+
+[node name="Label4" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/ProcessorAndMemory" index="1" unique_id=1980359631]
+layout_mode = 2
+text = "Memory Test: 16384 OK"
+
+[node name="Space2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/ProcessorAndMemory" index="2" unique_id=84260782]
+layout_mode = 2
+
+[node name="InfoSoftware" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="2" unique_id=906918671]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("7_ilc7a")
+
+[node name="Label6" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InfoSoftware" index="0" unique_id=971263355]
+layout_mode = 2
+text = "Clamster Software System Firmaware"
+
+[node name="Label7" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InfoSoftware" index="1" unique_id=1809694697]
+layout_mode = 2
+text = "v 1.03"
+
+[node name="Label8" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InfoSoftware" index="2" unique_id=399047585]
+layout_mode = 2
+text = "Copyright (C) 1994 "
+
+[node name="Space3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InfoSoftware" index="3" unique_id=1829651993]
+layout_mode = 2
+
+[node name="InitializeSystemDevice2" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="3" unique_id=1885518986]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("8_qc7hk")
+
+[node name="Label1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InitializeSystemDevice2" index="0" unique_id=2014013940]
+layout_mode = 2
+text = "Initialize System Device "
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InitializeSystemDevice2" index="1" unique_id=467683318]
+visible = false
+layout_mode = 2
+text = "Audio: LYRA - 16 Sound Card"
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InitializeSystemDevice2" index="2" unique_id=1121359914]
+visible = false
+layout_mode = 2
+text = "Video: VGA Controller"
+
+[node name="Space4" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/InitializeSystemDevice2" index="3" unique_id=71397885]
+visible = false
+layout_mode = 2
+
+[node name="Controllers" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="4" unique_id=86377860]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("9_hpies")
+
+[node name="Label1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Controllers" index="0" unique_id=1305830348]
+layout_mode = 2
+text = "Storage Conttroller v 1.12 "
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Controllers" index="1" unique_id=1326469811]
+visible = false
+layout_mode = 2
+text = "DEVICE 0: CD-420 HDD - 420MB"
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Controllers" index="2" unique_id=53956996]
+visible = false
+layout_mode = 2
+text = "DEVICE 1: CD-ROM"
+
+[node name="Space5" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Controllers" index="3" unique_id=1658130819]
+visible = false
+layout_mode = 2
+
+[node name="Boot" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer" index="5" unique_id=1379505046]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -2
+script = ExtResource("10_7ctmy")
+
+[node name="Label1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Boot" index="0" unique_id=530000379]
+layout_mode = 2
+text = "VOID Operative System "
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BoxContainer/VBoxContainer/Boot" index="1" unique_id=661191832]
+visible = false
+layout_mode = 2
+text = "Running Successfully"
+
+[node name="Timer" type="Timer" parent="." index="1" unique_id=534911028]
+autostart = true
+
+[node name="Timer2" type="Timer" parent="." index="2" unique_id=858212284]
+wait_time = 0.25
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3" unique_id=1336521320]
+stream = ExtResource("11_hpies")
+volume_db = 24.0
+autoplay = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
