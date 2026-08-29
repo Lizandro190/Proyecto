@@ -21,7 +21,7 @@ res://escenas/world/foreground.tscn::635fb2a49afe8d4b12ae7c64b136ffc0::178494864
 res://escenas/world/lluvia.tscn::8ee5120c4eec64a59c158a7d50c64af3::1784948645::res://.godot/exported/133200997/export-09e64f55d9c3155a06e7ff7f793bd2d1-lluvia.scn
 res://escenas/world/main.tscn::e41344b4b45d8a05b0b0e894c5a6ca37::1786425516::res://.godot/exported/133200997/export-9340532e442b707c691d2faf41ba354f-main.scn
 res://escenas/main.tscn::52ab5453ca6c3c5c4abc66c514f01906::1788036193::res://.godot/exported/133200997/export-8c3a66d9d44e9f5de4ab5e303f05c2db-main.scn
-res://recursos/ui_principal.tres::89d72ff9599ac563677ab5be693b5e4d::1788036096::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
+res://recursos/ui_principal.tres::89d72ff9599ac563677ab5be693b5e4d::1788036510::res://.godot/exported/133200997/export-d171b5cfb9757d84008a6213750885ac-ui_principal.res
 res://escenas/edificios/producion/edificio_piedra.tscn::1c8c99282f255eb2a2d2eef82e7bc9bb::1784948645::res://.godot/exported/133200997/export-771d774f53ad5bcf6d107cda610a74d5-edificio_piedra.scn
 res://escenas/UI/time/canvas_time.tscn::919b90044164bc5f1c7ee6c2e3542f56::1788015454::res://.godot/exported/133200997/export-79386c8bb7ce38d2683021ffbdccf1e2-canvas_time.scn
 res://escenas/builds/build.tscn::1d3cf45f79d93ca22b64ce317222dade::1784948645::res://.godot/exported/133200997/export-d9869bf05be56406d1b2575dcde831e2-build.scn
@@ -31,6 +31,5 @@ res://escenas/builds/wooden_build.tscn::dcb8fa91858a77c24f8b2a45b49deb6b::178494
 res://escenas/characters/Character.tscn::155cc46a5242f28179b1056390b4f2c6::1786423387::res://.godot/exported/133200997/export-ec8407ebde6261277c8987a35d2cd432-Character.scn
 res://escenas/characters/Colony.tscn::0e13b7464cf6b5216ffd13b27bb6d48b::1786423105::res://.godot/exported/133200997/export-57062c467a57d0555c5c967c523b6a42-Colony.scn
 res://escenas/UI/character/canvas_character.tscn::b1595bd6802622fc73fd018b10009905::1786425529::res://.godot/exported/133200997/export-3d5bc03886b4501da16184b7f6a9018b-canvas_character.scn
-res://escenas/UI/operative_system/run_operative_system.tscn::c2960eb9c00f9216a8f8432b07aba532::1788013076::res://.godot/exported/133200997/export-6104a14dedd3284cc27c0c9727577976-run_operative_system.scn
 res://recursos/oscuro.tres::8bf6e5dd95ec7799c89766256ebbb7f8::1788015637::res://.godot/exported/133200997/export-62811fc32d0a791d1723236a89baceda-oscuro.res
-res://scripts/sistema_operativo/arranque/arranque_sistema_operativo.tscn::dfa3311935d47588c7d7b0d0b710227e::1788036096::res://.godot/exported/133200997/export-efb691e2aa4b8049f76e0a4d8acbe8f7-arranque_sistema_operativo.scn
+res://scripts/sistema_operativo/arranque/arranque_sistema_operativo.tscn::dfa3311935d47588c7d7b0d0b710227e::1788036510::res://.godot/exported/133200997/export-efb691e2aa4b8049f76e0a4d8acbe8f7-arranque_sistema_operativo.scn

@@ -1,8 +1,17 @@
 78098b89c88a74ebe8c20117b8754620
+<<<<<<< Updated upstream
 ::res://::1788036241
 export_presets.cfg::TextFile::-1::1788036241::0::1::::<><><>0<>0<><>::
 ::res://escenas/::1788036193
 main.tscn::PackedScene::1415917728371834080::1788036193::0::1::::<><><>0<>0<><>::uid://bqie8rkomiiod::::res://scripts/main/main.gd<>uid://414aovpq2rse::::res://sprites/tilemaps/spritesJuntos.png<>uid://bl48xjm5vm7ix::::res://escenas/world/background.tscn<>uid://bokh7uj8tjtco::::res://escenas/world/production/game_manager.tscn<>uid://cl4sqy68eic6j::::res://scripts/main/manager/canvas_manager.gd<>uid://xx60ssannu10::::res://escenas/UI/character/canvas_character.tscn<>uid://s5pu6jcblnud::::res://escenas/UI/character/canvas_character_info_completed.tscn<>uid://dnuiodt42icuo::::res://escenas/UI/time/canvas_time.tscn<>uid://dxywk6t56y7d5::::res://escenas/world/camera_world.tscn<>uid://c4tcqcnaxec4j::::res://scripts/main/manager/colony_manager.gd<>uid://cv81kamwkvdx::::res://escenas/UI/construccion/canvas_grid_preview.tscn<>uid://nic4jgnwwe4e::::res://escenas/UI/produccion/canvas_production.tscn<>uid://wsf0ek66x0rs::::res://escenas/UI/construccion/canvas_edificio.tscn<>uid://k373wxvn0y8c::::res://escenas/builds/stone_build.tscn<>uid://ba46mhna4c826::::res://escenas/builds/wooden_build.tscn
+=======
+::res://::1784949590
+export_presets.cfg::TextFile::-1::1784948645::0::1::::<><><>0<>0<><>::
+::res://escenas/::1784949330
+control.tscn::PackedScene::5365034074147397997::1784948645::0::1::::<><><>0<>0<><>::uid://ygv6tu1va2e7::::res://scripts/UI/pantalla_inicio/control.gd<>uid://pc4bbtxpc0xj::::res://recursos/ui_principal.tres
+main.tscn::PackedScene::1415917728371834080::1784949330::0::1::::<><><>0<>0<><>::uid://bqie8rkomiiod::::res://scripts/main/main.gd<>uid://414aovpq2rse::::res://sprites/tilemaps/spritesJuntos.png<>uid://bl48xjm5vm7ix::::res://escenas/world/background.tscn<>uid://bokh7uj8tjtco::::res://escenas/world/production/game_manager.tscn<>uid://cl4sqy68eic6j::::res://scripts/main/manager/canvas_manager.gd<>uid://xx60ssannu10::::res://escenas/UI/character/canvas_character_info.tscn<>uid://s5pu6jcblnud::::res://escenas/UI/character/canvas_character_info_completed.tscn<>uid://ccgbp7mje16is::::res://escenas/UI/construccion/canvas_construction.tscn<>uid://dnuiodt42icuo::::res://escenas/UI/time/canvas_time.tscn<>uid://dxywk6t56y7d5::::res://escenas/world/camera_world.tscn<>uid://c4tcqcnaxec4j::::res://scripts/main/manager/colony_manager.gd<>uid://cv81kamwkvdx::::res://escenas/UI/construccion/canvas_grid_preview.tscn<>uid://nic4jgnwwe4e::::res://escenas/UI/produccion/canvas_production.tscn<>uid://wsf0ek66x0rs::::res://escenas/UI/construccion/canvas_edificio.tscn<>uid://k373wxvn0y8c::::res://escenas/builds/stone_build.tscn<>uid://ba46mhna4c826::::res://escenas/builds/wooden_build.tscn
+menu.tscn::PackedScene::7889482284070238807::1784948645::0::1::::<><><>0<>0<><>::uid://b5wy74e11i515::::res://scripts/UI/menu.gd<>uid://dx2q6sm48nxbd::::res://sprites/tilemaps/fondo/estrella_animated.png<>uid://bb6mome03y7jg::::res://sprites/clima/nube.png<>uid://by72humipcl11::::res://sprites/panel/panel.png
+>>>>>>> Stashed changes
 ::res://escenas/builds/::1784948723
 build.tscn::PackedScene::245644016513761443::1784948645::0::1::::<><><>0<>0<><>::uid://bqurwn1trto2j::::res://scripts/edificio/build.gd<>uid://dgx10qt68lefn::::res://sprites/edificios/sprite_edificio_default.png
 production_build.tscn::PackedScene::4854409192265972299::1784948645::0::1::::<><><>0<>0<><>::uid://dq8yrswmqscx::::res://escenas/builds/build.tscn<>uid://bbwmuixofh8ef::::res://scripts/builds/production_build.gd
@@ -52,6 +61,7 @@ production_manager.tscn::PackedScene::1244167481067581243::1784948645::0::1::::<
 ::res://escenas/world/singleton/::1786406956
 single_info.tscn::PackedScene::1550510033588309798::1786406956::0::1::::<><><>0<>0<><>::uid://cu1qgkiguwju7::::res://scripts/world/single_info/single_info.gd<>uid://cey3e5qkotm8y::::res://scripts/world/single_info/world_player_info.gd<>uid://dhkg37jex0vtn::::res://scripts/world/single_info/horario_world.gd<>uid://dkk47m700tacg::::res://scripts/world/single_info/world_weather_info.gd<>uid://bxwrl5d1towp7::::res://scripts/world/single_info/world_tick_global.gd<>uid://bihso2db3bk45::::res://scripts/world/single_info/production_global.gd<>uid://dsb3r5kldncve::::res://scripts/world/single_info/world_state.gd<>uid://b8f7dru5rt0uc::::res://scripts/world/single_info/eventos.gd<>uid://dbjdfveqjqna4::::res://scripts/world/single_info/world_info.gd<>uid://d4mmf2jotpc6n::::res://scripts/world/single_info/build_info.gd
 universal.tscn::PackedScene::2052989002583609241::1784948645::0::1::::<><><>0<>0<><>::uid://bgj1g6x04xbs2::::res://scripts/world/single_info/metodos_universales.gd
+<<<<<<< Updated upstream
 ::res://html/::1788036241
 index.apple-touch-icon.png::CompressedTexture2D::8046899938395581542::1788036241::1788036255::1::::<><><>0<>0<>f14005fa4c2e623ac1b6e5085c58579b<>res://.godot/imported/index.apple-touch-icon.png-501548209163ccca221df4fc6a7c3c2a.ctex::
 index.icon.png::CompressedTexture2D::3971367641716846996::1788036241::1788036255::1::::<><><>0<>0<>12823595b7898d40d40b5be60da49c42<>res://.godot/imported/index.icon.png-86cfb60f248dbbcbb938966694a6fe5d.ctex::
@@ -62,6 +72,17 @@ NahomisWorld.png::CompressedTexture2D::8920154395027222083::1784948645::17849488
 ::res://recursos/::1788036096
 oscuro.tres::Theme::2499870829081155612::1788015637::0::1::::<><><>0<>0<><>::uid://c7s47ptcr5fm0::::res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf
 ui_principal.tres::Theme::1058724071602539803::1788036096::0::1::::<><><>0<>0<><>::uid://c7s47ptcr5fm0::::res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf<>uid://ch67dtkhi6wkx::::res://sprites/panel/panel_dos.png
+=======
+::res://html/::1784948849
+index.apple-touch-icon.png::CompressedTexture2D::8046899938395581542::1784948645::1784948849::1::::<><><>0<>0<>f14005fa4c2e623ac1b6e5085c58579b<>res://.godot/imported/index.apple-touch-icon.png-501548209163ccca221df4fc6a7c3c2a.ctex::
+index.icon.png::CompressedTexture2D::3971367641716846996::1784948645::1784948849::1::::<><><>0<>0<>12823595b7898d40d40b5be60da49c42<>res://.godot/imported/index.icon.png-86cfb60f248dbbcbb938966694a6fe5d.ctex::
+index.png::CompressedTexture2D::3487035391576045545::1784948645::1784948849::1::::<><><>0<>0<>5911576dac9cd0d7b106f240bf14d63d<>res://.godot/imported/index.png-598db4bc1a486d88543275db98553c06.ctex::
+NahomisWorld.apple-touch-icon.png::CompressedTexture2D::3789530090220472293::1784948645::1784948849::1::::<><><>0<>0<>fbe5c6cb13f9779636ab296079805270<>res://.godot/imported/NahomisWorld.apple-touch-icon.png-b533851db3588af0d379f269f2d96185.ctex::
+NahomisWorld.icon.png::CompressedTexture2D::6523551862126176682::1784948645::1784948849::1::::<><><>0<>0<>0b9cd104b57a5bee2514abff2361ff72<>res://.godot/imported/NahomisWorld.icon.png-23a29a17eb8a0b9c5b3ab9ba49d9a3e3.ctex::
+NahomisWorld.png::CompressedTexture2D::8920154395027222083::1784948645::1784948849::1::::<><><>0<>0<>0b7516cd61f87a6eefe688706a8eb209<>res://.godot/imported/NahomisWorld.png-9a1003d95b5340e57feba251fd04ce04.ctex::
+::res://recursos/::1784949071
+ui_principal.tres::Theme::1058724071602539803::1784949071::0::1::::<><><>0<>0<><>::uid://c7s47ptcr5fm0::::res://recursos/fuentes/PixelifySans-VariableFont_wght.ttf<>uid://by72humipcl11::::res://sprites/panel/panel.png
+>>>>>>> Stashed changes
 ::res://recursos/fuentes/::1784948849
 PixelifySans-VariableFont_wght.ttf::FontFile::7057861918887808453::1784948646::1784948849::1::::<><><>0<>0<>05563b94c7a0ecd4c30ec4e7278a5422<>res://.godot/imported/PixelifySans-VariableFont_wght.ttf-07e4e0ab2c72205c63d2fac1a1ea5887.fontdata::
 Tiny5-Regular.ttf::FontFile::4375251210614090823::1784948646::1784948849::1::::<><><>0<>0<>97ae35343b9ba4ce9ebfec41d7298ed7<>res://.godot/imported/Tiny5-Regular.ttf-79eb05a6a14fa8ade0699298b15ae42d.fontdata::
@@ -201,6 +222,7 @@ temporizador.gd::GDScript::7411204729026244650::1784948646::0::1::::TimeCount<>N
 ::res://scripts/world/background/::1784948724
 background.gd::GDScript::3772836536256730051::1784948646::0::1::::<>Node2D<><>0<>0<><>::
 lluvia.gd::GDScript::8880961866958435831::1784948646::0::1::::<>Node2D<><>0<>0<><>::
+<<<<<<< Updated upstream
 ::res://scripts/world/single_info/::1786404570
 build_info.gd::GDScript::9220250015209454555::1784948646::0::1::::BuildInfo<>Node<><>0<>0<><>::
 eventos.gd::GDScript::4714923638848307702::1784948646::0::1::::Events<>Node<><>0<>0<><>::
@@ -208,6 +230,15 @@ horario_world.gd::GDScript::7671643733135992799::1786404570::0::1::::Horario<>No
 metodos_universales.gd::GDScript::2827724166813091947::1784949186::0::1::::UtilidadesUniversales<>Node<><>0<>0<><>::
 production_global.gd::GDScript::2963501406908015304::1785256578::0::1::::ProductionGlobal<>Node<><>0<>0<><>::
 production_info_canvas.gd::GDScript::3116881861690157856::1785256578::0::1::::<>CanvasLayer<><>0<>0<><>::
+=======
+::res://scripts/world/single_info/::1784949186
+build_info.gd::GDScript::9220250015209454555::1784948646::0::1::::BuildInfo<>Node<><>0<>0<><>::
+eventos.gd::GDScript::4714923638848307702::1784948646::0::1::::Events<>Node<><>0<>0<><>::
+horario_world.gd::GDScript::7671643733135992799::1784948646::0::1::::HorarioGlobal<>Node<><>0<>0<><>::
+metodos_universales.gd::GDScript::2827724166813091947::1784949186::0::1::::UtilidadesUniversales<>Node<><>0<>0<><>::
+production_global.gd::GDScript::2963501406908015304::1784948646::0::1::::ProductionGlobal<>Node<><>0<>0<><>::
+production_info_canvas.gd::GDScript::3116881861690157856::1784948646::0::1::::<>CanvasLayer<><>0<>0<><>::
+>>>>>>> Stashed changes
 production_manager.gd::GDScript::3561504206752476625::1784948646::0::1::::ProductionManager<>Node<><>0<>0<><>::
 single_info.gd::GDScript::6231274786292248604::1786404557::0::1::::SingletonInfo<>Node2D<><>0<>0<><>::
 world_info.gd::GDScript::7248222484360905825::1784948646::0::1::::WorldInfo<>Node<><>0<>0<><>::
@@ -241,16 +272,25 @@ flecha_vertical.png::CompressedTexture2D::8848451149477826240::1784948646::17849
 llave_negra.png::CompressedTexture2D::6677100571078463399::1784948646::1784948849::1::::<><><>0<>0<>eb1344456c618981ac8aec34f7bb772e<>res://.godot/imported/llave_negra.png-48de03b343922cc4502c903c8cddb156.ctex::
 tacha.png::CompressedTexture2D::2303526344686826586::1784948646::1784948849::1::::<><><>0<>0<>e439567df70adf05d5662607fee16567<>res://.godot/imported/tacha.png-dea673219582e44b495eabcb25aed616.ctex::
 view_hitbox.png::CompressedTexture2D::3555262796291830670::1784948646::1784948849::1::::<><><>0<>0<>a6c9ce763fc1a5be3290123cefc6864b<>res://.godot/imported/view_hitbox.png-81fc8fb202564827b2b87af33b292e7e.ctex::
+<<<<<<< Updated upstream
 ::res://sprites/panel/::1785256640
 panel.png::CompressedTexture2D::4138665947886096442::1784948646::1784948849::1::::<><><>0<>0<>14c0066071670dd83d497b87460b68ba<>res://.godot/imported/panel.png-c63c7d34a292f62af9085cd6663363a4.ctex::
 panel_dos.png::CompressedTexture2D::5330108298100203163::1785256578::1785256640::1::::<><><>0<>0<>6ee71ce715c131e0da3355e8aaf8f3be<>res://.godot/imported/panel_dos.png-f600ad422596ed22694ed6a160ec1b52.ctex::
+=======
+::res://sprites/panel/::1784948849
+panel.png::CompressedTexture2D::4138665947886096442::1784948646::1784948849::1::::<><><>0<>0<>14c0066071670dd83d497b87460b68ba<>res://.godot/imported/panel.png-c63c7d34a292f62af9085cd6663363a4.ctex::
+>>>>>>> Stashed changes
 ::res://sprites/personajes/::1784948849
 nahomi.png::CompressedTexture2D::5227873334551628760::1784948646::1784948849::1::::<><><>0<>0<>47504f0fcdc714a3f7213712aecbdad8<>res://.godot/imported/nahomi.png-0e609b5bb37cd0d74c6c434f60644aba.ctex::
 nohimi_mega_pequenia-Sheet.png::CompressedTexture2D::9088586124304176062::1784948646::1784948849::1::::<><><>0<>0<>a72e0968d94e3500f694057f4dbeeb3f<>res://.godot/imported/nohimi_mega_pequenia-Sheet.png-ac03eca83225a5dc23e3de3b1535cd6a.ctex::
 nohomi_subiendo.png::CompressedTexture2D::3383586682479750798::1784948646::1784948849::1::::<><><>0<>0<>18e5c23012fb04e00db6f69627974fc7<>res://.godot/imported/nohomi_subiendo.png-08d3f1e52279914f6e96903edeb6639f.ctex::
 ::res://sprites/tilemaps/::1784948849
 spritesJuntos.png::CompressedTexture2D::2090911848370509732::1784948647::1784948849::1::::<><><>0<>0<>03f5d019c04ada0a20253872e7930f9c<>res://.godot/imported/spritesJuntos.png-67d6a55c2a2d13aed78d452dce481931.ctex::
+<<<<<<< Updated upstream
 ::res://sprites/tilemaps/fondo/::1787957269
+=======
+::res://sprites/tilemaps/fondo/::1784948849
+>>>>>>> Stashed changes
 background_azul_plano.png::CompressedTexture2D::9143677794831523909::1784948646::1784948849::1::::<><><>0<>0<>005ebb39c5fc2f8e2bc0b2db3ee93903<>res://.godot/imported/background_azul_plano.png-384e4147f8c22e4ecc21537627ce74d6.ctex::
 estrella_animated.png::CompressedTexture2D::8830371450929196697::1784948647::1784948849::1::::<><><>0<>0<>02839078f9f256472f45de8ef711cc74<>res://.godot/imported/estrella_animated.png-7d178df60dcccdf8f12a6ff2fe759e2d.ctex::
 fondo_negro.png::CompressedTexture2D::5778949919687504595::1787957269::1787957269::1::::<><><>0<>0<>0224aa1d3c1af73f56f7a42da58d0b84<>res://.godot/imported/fondo_negro.png-f2e8be816cce080cbd8284affee05592.ctex::
